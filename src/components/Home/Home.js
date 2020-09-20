@@ -6,10 +6,10 @@ import Projects from '../Projects/Projects';
 const Home = () => {
 	return (
 		<div>
-			<Link to='home/about'>
+			<Link to='/about'>
 				<button>About</button>
 			</Link>
-			<Link to='home/projects'>
+			<Link to='/projects'>
 				<button>Projects</button>
 			</Link>
 		</div>

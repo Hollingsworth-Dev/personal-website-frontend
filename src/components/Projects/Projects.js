@@ -4,16 +4,16 @@ import { Link } from 'react-router-dom';
 const Projects = () => {
 	return (
 		<div>
-			<Link to='home/projects/simon'>
+			<Link to='/projects/simon'>
 				<button>SIMON</button>
 			</Link>
-			<Link to='home/projects/muse'>
+			<Link to='/projects/muse'>
 				<button>MUSE</button>
 			</Link>
-			<Link to='home/projects/playlist'>
+			<Link to='/projects/playlist'>
 				<button>PlayList</button>
 			</Link>
-			<Link to='home/projects/goodegg'>
+			<Link to='/projects/goodegg'>
 				<button>GoodEgg</button>
 			</Link>
 		</div>

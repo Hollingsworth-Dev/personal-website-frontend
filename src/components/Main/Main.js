@@ -7,7 +7,7 @@ import Projects from '../../components/Projects/Projects';
 const Main = () => {
 	return (
 		<div>
-			<Link to='/home'>
+			<Link to='/home' exact>
 				<div>
 					<h1>Caleb Hollingsworth</h1>
 					<h2>Software Developer</h2>
@@ -15,8 +15,8 @@ const Main = () => {
 			</Link>
 			<div>
 				<Route path='/home' component={Home} />
-				<Route path='/home/about' component={About} />
-				<Route path='/home/projects' component={Projects} />
+				<Route path='/about' component={About} />
+				<Route path='/projects' component={Projects} />
 			</div>
 		</div>
 	);
