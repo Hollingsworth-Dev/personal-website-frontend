@@ -1,17 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import About from '../About/About';
 import Projects from '../Projects/Projects';
 
 const Home = () => {
+	const [renderAbout, setRenderAbout] = useState(false);
+	const [renderProjects, setRenderProjects] = useState(false);
+	const renderAboutHandler = () => {
+		setRenderAbout(!renderAbout);
+	};
+	const renderProjectsHandler = () => {
+		setRenderProjects(!renderProjects);
+	};
+
 	return (
 		<div>
-			<Link to='/about'>
-				<button>About</button>
-			</Link>
-			<Link to='/projects'>
-				<button>Projects</button>
-			</Link>
+			<button onClick={renderAboutHandler}>About</button>
+
+			<button onClick={renderProjectsHandler}>Projects</button>
+			{renderAbout === true && (
+				<div>
+					{' '}
+					<About />
+				</div>
+			)}
+			{renderProjects === true && (
+				<div>
+					{' '}
+					<Projects />
+				</div>
+			)}
 		</div>
 	);
 };

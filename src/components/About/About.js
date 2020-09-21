@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
 	return (
-		<div>
+		<div className='about-list'>
 			<Link to='/about/contact'>
 				<button>contact</button>
 			</Link>

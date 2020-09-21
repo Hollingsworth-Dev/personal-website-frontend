@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Projects = () => {
 	return (
-		<div>
+		<div className='projects-list'>
 			<Link to='/projects/simon'>
 				<button>SIMON</button>
 			</Link>
