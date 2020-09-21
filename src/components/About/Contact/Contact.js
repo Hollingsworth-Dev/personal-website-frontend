@@ -4,6 +4,9 @@ const Contact = () => {
 	return (
 		<div>
 			<header>
+				{/* <img src='' alt=''>
+					MyFaceGoesHere
+				</img> */}
 				<h1>Contact</h1>
 			</header>
 			<main>
