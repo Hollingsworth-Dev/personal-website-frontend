@@ -10,9 +10,6 @@ const About = () => {
 			<Link to='/about/resume'>
 				<button>resumé</button>
 			</Link>
-			<Link to='/about/github'>
-				<button>GitHub</button>
-			</Link>
 			<Link to='/about/technologies'>
 				<button>technologies</button>
 			</Link>
