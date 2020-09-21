@@ -1,21 +1,75 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Simon from './Simon/Simon';
+import Muse from './Muse/Muse';
+import Goodegg from './Goodegg/Goodegg';
+import Playlist from './Playlist/Playlist';
 
 const Projects = () => {
+	const [renderSimon, setRenderSimon] = useState(false);
+	const [renderMuse, setRenderMuse] = useState(false);
+	const [renderGoodegg, setRenderGoodegg] = useState(false);
+	const [renderPlaylist, setRenderPlaylist] = useState(false);
+	const renderSimonHandler = () => {
+		setRenderSimon(!renderSimon);
+		setRenderMuse(false);
+		setRenderGoodegg(false);
+		setRenderPlaylist(false);
+	};
+	const renderMuseHandler = () => {
+		setRenderMuse(!renderMuse);
+		setRenderSimon(false);
+		setRenderGoodegg(false);
+		setRenderPlaylist(false);
+	};
+	const renderGoodeggHandler = () => {
+		setRenderGoodegg(!renderGoodegg);
+		setRenderSimon(false);
+		setRenderMuse(false);
+		setRenderPlaylist(false);
+	};
+	const renderPlaylistHandler = () => {
+		setRenderPlaylist(!renderPlaylist);
+		setRenderMuse(false);
+		setRenderGoodegg(false);
+		setRenderSimon(false);
+	};
+
 	return (
 		<div className='projects-list'>
-			<Link to='/projects/simon'>
-				<button>SIMON</button>
-			</Link>
-			<Link to='/projects/muse'>
-				<button>MUSE</button>
-			</Link>
-			<Link to='/projects/playlist'>
-				<button>PlayList</button>
-			</Link>
-			<Link to='/projects/goodegg'>
-				<button>GoodEgg</button>
-			</Link>
+			<button onClick={renderSimonHandler}>SIMON</button>
+
+			<button onClick={renderMuseHandler}>MUSE</button>
+
+			<button onClick={renderPlaylistHandler}>PlayList</button>
+
+			<button onClick={renderGoodeggHandler}>GoodEgg</button>
+			<div>
+				{renderSimon === true && (
+					<div>
+						{' '}
+						<Simon />
+					</div>
+				)}
+				{renderMuse === true && (
+					<div>
+						{' '}
+						<Muse />
+					</div>
+				)}
+				{renderGoodegg === true && (
+					<div>
+						{' '}
+						<Goodegg />
+					</div>
+				)}
+				{renderPlaylist === true && (
+					<div>
+						{' '}
+						<Playlist />
+					</div>
+				)}
+			</div>
 		</div>
 	);
 };
