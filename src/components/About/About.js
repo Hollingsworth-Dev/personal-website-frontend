@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Contact from './Contact/Contact';
 import Resume from './Resume/Resume';
 import Technologies from './Technologies/Technologies';
+import './About.css';
 
 const About = () => {
 	const [renderContact, setRenderContact] = useState(false);
@@ -25,9 +26,17 @@ const About = () => {
 	};
 	return (
 		<div className='about-list'>
-			<button onClick={renderContactHandler}>contact</button>
-			<button onClick={renderResumeHandler}>resumé</button>
-			<button onClick={renderTechsHandler}>technologies</button>
+			<div className='about-list-buttons'>
+				<button className='about-contact' onClick={renderContactHandler}>
+					contact
+				</button>
+				<button className='about-resume' onClick={renderResumeHandler}>
+					resumé
+				</button>
+				<button className='about-tech' onClick={renderTechsHandler}>
+					technologies
+				</button>
+			</div>
 			<div>
 				{renderContact === true && (
 					<div>

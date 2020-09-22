@@ -4,6 +4,7 @@ import Simon from './Simon/Simon';
 import Muse from './Muse/Muse';
 import Goodegg from './Goodegg/Goodegg';
 import Playlist from './Playlist/Playlist';
+import './Projects.css';
 
 const Projects = () => {
 	const [renderSimon, setRenderSimon] = useState(false);
@@ -37,13 +38,23 @@ const Projects = () => {
 
 	return (
 		<div className='projects-list'>
-			<button onClick={renderSimonHandler}>SIMON</button>
+			<div className='projects-buttons'>
+				<button className='projects-simon' onClick={renderSimonHandler}>
+					SIMON
+				</button>
 
-			<button onClick={renderMuseHandler}>MUSE</button>
+				<button className='projects-simon' onClick={renderMuseHandler}>
+					MUSE
+				</button>
 
-			<button onClick={renderPlaylistHandler}>PlayList</button>
+				<button className='projects-simon' onClick={renderPlaylistHandler}>
+					PlayList
+				</button>
 
-			<button onClick={renderGoodeggHandler}>GoodEgg</button>
+				<button className='projects-simon' onClick={renderGoodeggHandler}>
+					GoodEgg
+				</button>
+			</div>
 			<div>
 				{renderSimon === true && (
 					<div>
