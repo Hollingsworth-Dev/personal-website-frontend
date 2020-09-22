@@ -6,7 +6,6 @@ import {
 	AiOutlineLink,
 	AiOutlineGithub,
 	AiOutlineMedium,
-	AiOutlineDesktop,
 } from 'react-icons/ai';
 
 const Simon = () => {
