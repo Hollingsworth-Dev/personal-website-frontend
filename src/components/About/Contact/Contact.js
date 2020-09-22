@@ -1,4 +1,11 @@
 import React from 'react';
+import {
+	AiOutlineGithub,
+	AiOutlineLinkedin,
+	AiOutlineInstagram,
+	AiOutlineTwitter,
+	AiOutlineLink,
+} from 'react-icons/ai';
 
 const Contact = () => {
 	return (
@@ -16,12 +23,20 @@ const Contact = () => {
 						<li>caleb.hollingsworth.dev@gmail.com</li>
 						<li>(601)618-4562</li>
 					</ul>
-					<div>
+					<div className='social-icons'>
 						{/* icons go here */}
-						<div>LinkedIn</div>
-						<div>GitHub</div>
-						<div>InstaGram</div>
-						<div>Twitter</div>
+						<a href='https://www.linkedin.com/in/caleb-hollingsworth-dev/'>
+							<AiOutlineLinkedin />
+						</a>
+						<a href='https://github.com/Caleb-Hollingsworth'>
+							<AiOutlineGithub />
+						</a>
+						<a href='https://www.instagram.com/caleb_developer/?hl=en'>
+							<AiOutlineInstagram />
+						</a>
+						<a href='https://twitter.com/caleb_developer'>
+							<AiOutlineTwitter />
+						</a>
 					</div>
 				</div>
 				<div>
