@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Modal from '../../Modal';
-import Document from '../../../Images/Resume/Caleb Hollingsworth Resume.pdf';
+import './Resume.css';
 
 const Resume = () => {
 	const [showModal, setShowModal] = useState(false);
@@ -13,12 +13,10 @@ const Resume = () => {
 				<h1>Resumé</h1>
 			</header>
 			<main>
-				<button onClick={handleShowModal}>Modal</button>
-				{showModal === true && (
-					<Modal>
-						<Document />
-					</Modal>
-				)}
+				<button className='modal-button' onClick={handleShowModal}>
+					Modal
+				</button>
+				{showModal === true && <Modal />}
 			</main>
 		</div>
 	);

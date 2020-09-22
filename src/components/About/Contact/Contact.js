@@ -5,6 +5,7 @@ import {
 	AiOutlineInstagram,
 	AiOutlineTwitter,
 } from 'react-icons/ai';
+import { Form } from 'react-bootstrap/Form';
 
 const Contact = () => {
 	return (
@@ -40,7 +41,7 @@ const Contact = () => {
 				</div>
 				<div>
 					<h2>got a question or want to work together?</h2>
-					<form>form goes here</form>
+					<Form></Form>
 				</div>
 			</main>
 		</div>
