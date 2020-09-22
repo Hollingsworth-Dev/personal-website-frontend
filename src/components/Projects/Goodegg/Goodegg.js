@@ -29,17 +29,16 @@ const Goodegg = () => {
 				</div>
 				<div>
 					<div>
-						<a href='https://salty-cliffs-88075.herokuapp.com/'>
+						<a href='https://salty-cliffs-88075.herokuapp.com/' target='_blank'>
 							<AiOutlineLink />
-							checkout deployed application
 						</a>
-						<a href='https://github.com/teamscrum2000'>
+						<a href='https://github.com/teamscrum2000' target='_blank'>
 							<AiOutlineGithub />
-							checkout the GitHub repository
 						</a>
-						<a href='https://medium.com/@caleb.hollingsworth.dev/goodegg-dev-b9425d1b9378'>
+						<a
+							href='https://medium.com/@caleb.hollingsworth.dev/goodegg-dev-b9425d1b9378'
+							target='_blank'>
 							<AiOutlineMedium />
-							learn more about my experience making this app
 						</a>
 					</div>
 				</div>

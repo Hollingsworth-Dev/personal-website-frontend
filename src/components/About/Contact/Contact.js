@@ -4,7 +4,6 @@ import {
 	AiOutlineLinkedin,
 	AiOutlineInstagram,
 	AiOutlineTwitter,
-	AiOutlineLink,
 } from 'react-icons/ai';
 
 const Contact = () => {

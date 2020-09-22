@@ -26,17 +26,16 @@ const Muse = () => {
 					<img className='muse-main' src={Main} alt='muse'></img>
 				</div>
 				<div>
-					<a href='https://muse-application-hollingsworth.herokuapp.com/'>
+					<a
+						href='https://muse-application-hollingsworth.herokuapp.com/'
+						target='_blank'>
 						<AiOutlineLink />
-						checkout the deployed application
 					</a>
-					<a href='https://github.com/Caleb-Hollingsworth/Muse'>
+					<a href='https://github.com/Caleb-Hollingsworth/Muse' target='_blank'>
 						<AiOutlineGithub />
-						checkout the GitHub repository
 					</a>
-					<a href='https://www.youtube.com/watch?v=aCx2IJxdyGo'>
+					<a href='https://www.youtube.com/watch?v=aCx2IJxdyGo' target='_blank'>
 						<AiOutlineYoutube />
-						just a fun infomercial
 					</a>
 				</div>
 			</main>

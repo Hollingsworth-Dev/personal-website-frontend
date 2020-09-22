@@ -9,6 +9,9 @@ import {
 } from 'react-icons/ai';
 
 const Simon = () => {
+	const onclickHandler = (url) => {
+		window.open(url);
+	};
 	return (
 		<div>
 			<h1>SIMON</h1>
@@ -24,18 +27,20 @@ const Simon = () => {
 				</div>
 				<div>
 					<div>
-						<a href='https://caleb-hollingsworth.github.io/SIMON-GAME/'>
+						<a
+							href='https://caleb-hollingsworth.github.io/SIMON-GAME/'
+							target='_blank'>
 							<AiOutlineLink />
-							checkout the deployed application
 						</a>
-						<a href='https://github.com/Caleb-Hollingsworth/SIMON-GAME'>
+						<a
+							href='https://github.com/Caleb-Hollingsworth/SIMON-GAME'
+							target='_blank'>
 							<AiOutlineGithub />
-							checkout the GitHub repository
 						</a>
-						<a href=''>
+						{/* <div>
 							<AiOutlineMedium />
 							Blog post coming soon!
-						</a>
+						</div> */}
 					</div>
 				</div>
 			</main>
