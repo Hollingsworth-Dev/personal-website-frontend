@@ -1,0 +1,30 @@
+.main-page {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.main-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: -200px;
+}
+.main-button {
+	border: 2px solid var(--main-blue-color);
+	border-radius: 25px;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: transparent;
+}
+.main-button:hover {
+	opacity: 0.6;
+}
+.main-button:active {
+	outline: none;
+	border: none;
+}
+.main-button:focus {
+	outline: 0;
+}

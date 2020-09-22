@@ -1,0 +1,22 @@
+.about-list-buttons {
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+}
+.about-list-buttons button {
+	margin-bottom: 30px;
+	border: 2px solid var(--main-blue-color);
+	border-radius: 10px;
+	padding: 10px;
+	background-color: transparent;
+}
+.about-list-buttons button:hover {
+	opacity: 0.6;
+}
+.about-list-buttons button:active {
+	outline: none;
+	border: none;
+}
+.about-list-buttons button:focus {
+	outline: 0;
+}
