@@ -18,19 +18,19 @@ const Simon = () => {
 					<p>A digital version of the 1970s electronic game, SIMON.</p>
 				</div>
 				<div className='simon-images'>
-					<img classname='simon-title' src={Title} alt='simon'></img>
-					<img classname='simon-mobile' src={Mobile} alt='simon'></img>
-					<img classname='simon-desktop' src={Desktop} alt='simon'></img>
+					<img className='simon-title' src={Title} alt='simon'></img>
+					<img className='simon-mobile' src={Mobile} alt='simon'></img>
+					<img className='simon-desktop' src={Desktop} alt='simon'></img>
 				</div>
 				<div>
 					<div>
 						<a href='https://caleb-hollingsworth.github.io/SIMON-GAME/'>
 							<AiOutlineLink />
-							deployed application
+							checkout the deployed application
 						</a>
 						<a href='https://github.com/Caleb-Hollingsworth/SIMON-GAME'>
 							<AiOutlineGithub />
-							GitHub repository
+							checkout the GitHub repository
 						</a>
 						<a href=''>
 							<AiOutlineMedium />

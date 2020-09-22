@@ -21,18 +21,18 @@ const Muse = () => {
 					</p>
 				</div>
 				<div className='muse-images'>
-					<img classname='muse-mobile' src={Mobile} alt='muse'></img>
-					<img classname='muse-home' src={Home} alt='muse'></img>
-					<img classname='muse-main' src={Main} alt='muse'></img>
+					<img className='muse-mobile' src={Mobile} alt='muse'></img>
+					<img className='muse-home' src={Home} alt='muse'></img>
+					<img className='muse-main' src={Main} alt='muse'></img>
 				</div>
 				<div>
 					<a href='https://muse-application-hollingsworth.herokuapp.com/'>
 						<AiOutlineLink />
-						deployed application
+						checkout the deployed application
 					</a>
 					<a href='https://github.com/Caleb-Hollingsworth/Muse'>
 						<AiOutlineGithub />
-						GitHub repository
+						checkout the GitHub repository
 					</a>
 					<a href='https://www.youtube.com/watch?v=aCx2IJxdyGo'>
 						<AiOutlineYoutube />
