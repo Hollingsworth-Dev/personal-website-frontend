@@ -8,9 +8,11 @@ const Home = () => {
 	const [renderProjects, setRenderProjects] = useState(false);
 	const renderAboutHandler = () => {
 		setRenderAbout(!renderAbout);
+		setRenderProjects(false);
 	};
 	const renderProjectsHandler = () => {
 		setRenderProjects(!renderProjects);
+		setRenderAbout(false);
 	};
 
 	return (
