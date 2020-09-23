@@ -7,30 +7,25 @@ import {
 	AiOutlineGithub,
 	AiOutlineMedium,
 } from 'react-icons/ai';
+import './Playlist.css';
 const Playlist = () => {
 	return (
-		<div>
+		<div className='playlist-page'>
 			<h1>PlayList</h1>
-			<main>
-				<div>
+			<main className='playlist-content'>
+				<div className='playlist-message'>
 					<p>A full-stack MERN application</p>
 					<p>
 						A place to create playlists of the soundtracks from your favorite
 						video-games.
 					</p>
-				</div>
-				<div className='playlist-images'>
-					<img className='playlist-mobile' src={Mobile} alt='playlist'></img>
-					<img className='playlist-home' src={Home} alt='playlist'></img>
-					<img className='playlist-view' src={View} alt='playlist'></img>
-				</div>
-				<div>
-					<div>
+
+					<div className='playlist-icons'>
 						<a href='https://salty-cliffs-88075.herokuapp.com/' target='_blank'>
-							<AiOutlineLink />
+							<AiOutlineLink size='lg' />
 						</a>
 						<a href='https://github.com/teamscrum2000' target='_blank'>
-							<AiOutlineGithub />
+							<AiOutlineGithub size='lg' />
 						</a>
 						{/* <a href=''>
 							<AiOutlineMedium />
@@ -38,6 +33,9 @@ const Playlist = () => {
 						</a> */}
 					</div>
 				</div>
+				<img className='playlist-mobile' src={Mobile} alt='playlist'></img>
+				<img className='playlist-home' src={Home} alt='playlist'></img>
+				<img className='playlist-view' src={View} alt='playlist'></img>
 			</main>
 		</div>
 	);
