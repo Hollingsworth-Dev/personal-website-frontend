@@ -7,42 +7,42 @@ import {
 	AiOutlineGithub,
 	AiOutlineMedium,
 } from 'react-icons/ai';
+import './Simon.css';
 
 const Simon = () => {
 	const onclickHandler = (url) => {
 		window.open(url);
 	};
 	return (
-		<div>
+		<div className='simon-page'>
 			<h1>SIMON</h1>
-			<main>
-				<div>
+
+			<main className='simon-content'>
+				<div className='simon-message'>
 					<p>An application using HTML, CSS, & JavaScript</p>
 					<p>A digital version of the 1970s electronic game, SIMON.</p>
-				</div>
-				<div className='simon-images'>
-					<img className='simon-title' src={Title} alt='simon'></img>
-					<img className='simon-mobile' src={Mobile} alt='simon'></img>
-					<img className='simon-desktop' src={Desktop} alt='simon'></img>
-				</div>
-				<div>
-					<div>
-						<a
-							href='https://caleb-hollingsworth.github.io/SIMON-GAME/'
-							target='_blank'>
-							<AiOutlineLink />
-						</a>
-						<a
-							href='https://github.com/Caleb-Hollingsworth/SIMON-GAME'
-							target='_blank'>
-							<AiOutlineGithub />
-						</a>
-						{/* <div>
+					<div className='simon-icons'>
+						<div>
+							<a
+								href='https://caleb-hollingsworth.github.io/SIMON-GAME/'
+								target='_blank'>
+								<AiOutlineLink size='lg' />
+							</a>
+							<a
+								href='https://github.com/Caleb-Hollingsworth/SIMON-GAME'
+								target='_blank'>
+								<AiOutlineGithub size='lg' />
+							</a>
+							{/* <div>
 							<AiOutlineMedium />
 							Blog post coming soon!
 						</div> */}
+						</div>
 					</div>
 				</div>
+				<img className='simon-title' src={Title} alt='simon'></img>
+				<img className='simon-mobile' src={Mobile} alt='simon'></img>
+				<img className='simon-desktop' src={Desktop} alt='simon'></img>
 			</main>
 		</div>
 	);
