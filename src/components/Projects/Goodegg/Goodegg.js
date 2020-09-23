@@ -8,40 +8,38 @@ import {
 	AiOutlineGithub,
 	AiOutlineMedium,
 } from 'react-icons/ai';
+import './Goodegg.css';
 
 const Goodegg = () => {
 	return (
-		<div>
+		<div className='goodegg-page'>
 			<h1>GoodEgg</h1>
-			<main>
-				<div>
+			<main className='goodegg-content'>
+				<div className='goodegg-message'>
 					<p>A full-stack application using React.js and Django</p>
 					<p>
 						A police accountability app to track and report 'GoodEggs' and
 						'BadApples' within your community.
 					</p>
-				</div>
-				<div className='goodegg-images'>
-					<img className='goodegg-home' src={Home} alt='goodegg'></img>
-					<img className='goodegg-incident' src={Incident} alt='goodegg'></img>
-					<img className='goodegg-officer' src={Officer} alt='goodegg'></img>
-					<img className='goodegg-profile' src={Profile} alt='goodegg'></img>
-				</div>
-				<div>
-					<div>
+
+					<div className='goodegg-icons'>
 						<a href='https://salty-cliffs-88075.herokuapp.com/' target='_blank'>
-							<AiOutlineLink />
+							<AiOutlineLink size='lg' />
 						</a>
 						<a href='https://github.com/teamscrum2000' target='_blank'>
-							<AiOutlineGithub />
+							<AiOutlineGithub size='lg' />
 						</a>
 						<a
 							href='https://medium.com/@caleb.hollingsworth.dev/goodegg-dev-b9425d1b9378'
 							target='_blank'>
-							<AiOutlineMedium />
+							<AiOutlineMedium size='lg' />
 						</a>
 					</div>
 				</div>
+				<img className='goodegg-home' src={Home} alt='goodegg'></img>
+				<img className='goodegg-incident' src={Incident} alt='goodegg'></img>
+				<img className='goodegg-officer' src={Officer} alt='goodegg'></img>
+				<img className='goodegg-profile' src={Profile} alt='goodegg'></img>
 			</main>
 		</div>
 	);

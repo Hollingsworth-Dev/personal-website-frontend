@@ -1,0 +1,60 @@
+.goodegg-page {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	bottom: -100px;
+	padding: 100px;
+	margin-bottom: 200px;
+	align-items: center;
+}
+.goodegg-page h1 {
+	border: 2px solid var(--main-blue-color);
+	border-radius: 15px;
+	padding: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: transparent;
+}
+.goodegg-content {
+	margin-top: 40px;
+	display: grid;
+	grid-template-columns: 225px 225px;
+	grid-template-rows: 450px 450px;
+	grid-gap: 20px;
+	border: 2px solid var(--main-blue-color);
+	border-radius: 25px;
+	padding: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: transparent;
+}
+.goodegg-icons {
+	width: 12%;
+}
+.goodegg-home {
+	height: 450px;
+	grid-column: 1 / span 1;
+	grid-row: 1 / span 1;
+}
+.goodegg-profile {
+	height: 450px;
+	grid-column: 1 / span 2;
+	grid-row: 2 / span 1;
+}
+.goodegg-officer {
+	height: 450px;
+	grid-column: 2 / span 1;
+	grid-row: 2 / span 1;
+}
+.goodegg-message {
+	border: 2px solid var(--main-blue-color);
+	border-radius: 25px;
+	padding: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: transparent;
+}
+.goodegg-incident {
+	display: none;
+}
