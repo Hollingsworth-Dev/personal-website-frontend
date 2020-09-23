@@ -1,14 +1,12 @@
 .main-page {
 	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	position: relative;
+	top: 30%;
 }
 .main-content {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-top: -200px;
 }
 .main-button {
 	border: 2px solid var(--main-blue-color);
@@ -27,4 +25,6 @@
 }
 .main-button:focus {
 	outline: 0;
+}
+.contact-component {
 }

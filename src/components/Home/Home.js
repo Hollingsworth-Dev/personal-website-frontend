@@ -4,39 +4,32 @@ import About from '../About/About';
 import Projects from '../Projects/Projects';
 import './Home.css';
 
-const Home = () => {
-	const [renderAbout, setRenderAbout] = useState(false);
-	const [renderProjects, setRenderProjects] = useState(false);
-	const renderAboutHandler = () => {
-		setRenderAbout(!renderAbout);
-		setRenderProjects(false);
-	};
-	const renderProjectsHandler = () => {
-		setRenderProjects(!renderProjects);
-		setRenderAbout(false);
-	};
-
+const Home = (props) => {
 	return (
 		<div className='home-page'>
 			<div className='home-buttons'>
-				<button className='home-about' onClick={renderAboutHandler}>
+				<button className='home-about' onClick={props.renderAboutHandler}>
 					About
 				</button>
 
-				<button className='home-projects' onClick={renderProjectsHandler}>
+				<button className='home-projects' onClick={props.renderProjectsHandler}>
 					Projects
 				</button>
 			</div>
 			<div className='about-page'>
-				{renderAbout === true && (
+				{props.renderAbout === true && (
 					<div>
 						{' '}
-						<About />
+						<About
+							renderContactHandler={props.renderContactHandler}
+							renderResumeHandler={props.renderResumeHandler}
+							renderTechsHandler={props.renderTechsHandler}
+						/>
 					</div>
 				)}
 			</div>
 			<div className='projects-page'>
-				{renderProjects === true && (
+				{props.renderProjects === true && (
 					<div>
 						{' '}
 						<Projects />
