@@ -2,9 +2,12 @@ import React, { useState } from 'react';
 import { Route, Link } from 'react-router-dom';
 import Home from '../../components/Home/Home';
 import Contact from '../About/Contact/Contact';
-import Resume from '../About/Resume/Resume';
 import Technologies from '../About/Technologies/Technologies';
 import Modal from '../Modal';
+import Simon from '../Projects/Simon/Simon';
+import Playlist from '../Projects/Playlist/Playlist';
+import Muse from '../Projects/Muse/Muse';
+import Goodegg from '../Projects/Goodegg/Goodegg';
 import './Main.css';
 
 const Main = () => {
@@ -17,14 +20,10 @@ const Main = () => {
 	const [renderResume, setRenderResume] = useState(false);
 	const [renderTechs, setRenderTechs] = useState(false);
 	const [renderAbout, setRenderAbout] = useState(false);
-	const [renderProjects, setRenderProjects] = useState(false);
+
 	const renderAboutHandler = () => {
 		setRenderAbout(!renderAbout);
 		setRenderProjects(false);
-	};
-	const renderProjectsHandler = () => {
-		setRenderProjects(!renderProjects);
-		setRenderAbout(false);
 	};
 
 	const renderContactHandler = () => {
@@ -45,6 +44,40 @@ const Main = () => {
 
 	//Projects section hooks
 
+	const [renderSimon, setRenderSimon] = useState(false);
+	const [renderMuse, setRenderMuse] = useState(false);
+	const [renderGoodegg, setRenderGoodegg] = useState(false);
+	const [renderPlaylist, setRenderPlaylist] = useState(false);
+	const [renderProjects, setRenderProjects] = useState(false);
+	const renderProjectsHandler = () => {
+		setRenderProjects(!renderProjects);
+		setRenderAbout(false);
+	};
+	const renderSimonHandler = () => {
+		setRenderSimon(!renderSimon);
+		setRenderMuse(false);
+		setRenderGoodegg(false);
+		setRenderPlaylist(false);
+	};
+	const renderMuseHandler = () => {
+		setRenderMuse(!renderMuse);
+		setRenderSimon(false);
+		setRenderGoodegg(false);
+		setRenderPlaylist(false);
+	};
+	const renderGoodeggHandler = () => {
+		setRenderGoodegg(!renderGoodegg);
+		setRenderSimon(false);
+		setRenderMuse(false);
+		setRenderPlaylist(false);
+	};
+	const renderPlaylistHandler = () => {
+		setRenderPlaylist(!renderPlaylist);
+		setRenderMuse(false);
+		setRenderGoodegg(false);
+		setRenderSimon(false);
+	};
+
 	//Modal hooks
 	const [showModal, setShowModal] = useState(false);
 	const handleShowModal = () => {
@@ -61,11 +94,16 @@ const Main = () => {
 				<div>
 					{renderHome === true && (
 						<Home
+							renderProjectsHandler={renderProjectsHandler}
+							renderProjects={renderProjects}
+							renderSimonHandler={renderSimonHandler}
+							renderMuseHandler={renderMuseHandler}
+							renderGoodeggHandler={renderGoodeggHandler}
+							renderPlaylistHandler={renderPlaylistHandler}
 							handleShowModal={handleShowModal}
 							renderAbout={renderAbout}
 							renderProject={renderProjects}
 							renderAboutHandler={renderAboutHandler}
-							renderProjectsHandler={renderProjectsHandler}
 							renderContactHandler={renderContactHandler}
 							renderResumeHandler={renderResumeHandler}
 							renderTechsHandler={renderTechsHandler}
@@ -91,6 +129,32 @@ const Main = () => {
 					<Technologies />
 				</div>
 			)}
+			<div>
+				{renderProjects === true && renderSimon === true && (
+					<div>
+						{' '}
+						<Simon />
+					</div>
+				)}
+				{renderProjects === true && renderMuse === true && (
+					<div>
+						{' '}
+						<Muse />
+					</div>
+				)}
+				{renderProjects === true && renderGoodegg === true && (
+					<div>
+						{' '}
+						<Goodegg />
+					</div>
+				)}
+				{renderProjects === true && renderPlaylist === true && (
+					<div>
+						{' '}
+						<Playlist />
+					</div>
+				)}
+			</div>
 		</div>
 	);
 };

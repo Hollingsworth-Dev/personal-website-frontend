@@ -1,0 +1,64 @@
+.simon-page {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	bottom: -100px;
+	padding: 100px;
+	margin-bottom: 200px;
+	align-items: center;
+}
+.simon-page h1 {
+	border: 2px solid var(--main-blue-color);
+	border-radius: 15px;
+	padding: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: transparent;
+}
+.simon-content {
+	margin-top: 40px;
+	display: grid;
+	grid-template-columns: 300px 300px 300px;
+	grid-template-rows: 450px 500px 100px;
+	grid-gap: 20px;
+	border: 2px solid var(--main-blue-color);
+	border-radius: 25px;
+	padding: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: transparent;
+}
+.simon-desktop {
+	width: 900px;
+	border-radius: 15px;
+	grid-column: 1 / span 3;
+	grid-row: 1 / span 1;
+	justify-self: center;
+}
+.simon-mobile {
+	width: 300px;
+	grid-column: 3 / span 1;
+	grid-row: 2 / span 2;
+}
+.simon-title {
+	grid-column: 1 / span 2;
+	grid-row: 3 / span 1;
+	align-self: end;
+	justify-self: center;
+}
+.simon-message {
+	grid-column: 1 / span 2;
+	grid-row: 2 / span 1;
+	border: 2px solid var(--main-blue-color);
+	border-radius: 25px;
+	padding: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: transparent;
+}
+.simon-icons {
+	display: flex;
+	justify-content: center;
+	width: 5%;
+}

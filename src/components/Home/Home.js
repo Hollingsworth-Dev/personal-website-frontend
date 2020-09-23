@@ -33,7 +33,12 @@ const Home = (props) => {
 				{props.renderProjects === true && (
 					<div>
 						{' '}
-						<Projects />
+						<Projects
+							renderSimonHandler={props.renderSimonHandler}
+							renderMuseHandler={props.renderMuseHandler}
+							renderGoodeggHandler={props.renderGoodeggHandler}
+							renderPlaylistHandler={props.renderPlaylistHandler}
+						/>
 					</div>
 				)}
 			</div>

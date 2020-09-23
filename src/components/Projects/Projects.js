@@ -6,80 +6,27 @@ import Goodegg from './Goodegg/Goodegg';
 import Playlist from './Playlist/Playlist';
 import './Projects.css';
 
-const Projects = () => {
-	const [renderSimon, setRenderSimon] = useState(false);
-	const [renderMuse, setRenderMuse] = useState(false);
-	const [renderGoodegg, setRenderGoodegg] = useState(false);
-	const [renderPlaylist, setRenderPlaylist] = useState(false);
-	const renderSimonHandler = () => {
-		setRenderSimon(!renderSimon);
-		setRenderMuse(false);
-		setRenderGoodegg(false);
-		setRenderPlaylist(false);
-	};
-	const renderMuseHandler = () => {
-		setRenderMuse(!renderMuse);
-		setRenderSimon(false);
-		setRenderGoodegg(false);
-		setRenderPlaylist(false);
-	};
-	const renderGoodeggHandler = () => {
-		setRenderGoodegg(!renderGoodegg);
-		setRenderSimon(false);
-		setRenderMuse(false);
-		setRenderPlaylist(false);
-	};
-	const renderPlaylistHandler = () => {
-		setRenderPlaylist(!renderPlaylist);
-		setRenderMuse(false);
-		setRenderGoodegg(false);
-		setRenderSimon(false);
-	};
-
+const Projects = (props) => {
 	return (
 		<div className='projects-list'>
 			<div className='projects-buttons'>
-				<button className='projects-simon' onClick={renderSimonHandler}>
+				<button className='projects-simon' onClick={props.renderSimonHandler}>
 					SIMON
 				</button>
 
-				<button className='projects-simon' onClick={renderMuseHandler}>
+				<button className='projects-simon' onClick={props.renderMuseHandler}>
 					MUSE
 				</button>
 
-				<button className='projects-simon' onClick={renderPlaylistHandler}>
+				<button
+					className='projects-simon'
+					onClick={props.renderPlaylistHandler}>
 					PlayList
 				</button>
 
-				<button className='projects-simon' onClick={renderGoodeggHandler}>
+				<button className='projects-simon' onClick={props.renderGoodeggHandler}>
 					GoodEgg
 				</button>
-			</div>
-			<div>
-				{renderSimon === true && (
-					<div>
-						{' '}
-						<Simon />
-					</div>
-				)}
-				{renderMuse === true && (
-					<div>
-						{' '}
-						<Muse />
-					</div>
-				)}
-				{renderGoodegg === true && (
-					<div>
-						{' '}
-						<Goodegg />
-					</div>
-				)}
-				{renderPlaylist === true && (
-					<div>
-						{' '}
-						<Playlist />
-					</div>
-				)}
 			</div>
 		</div>
 	);
