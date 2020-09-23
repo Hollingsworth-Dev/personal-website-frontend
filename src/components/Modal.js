@@ -24,6 +24,7 @@ const Modal = (props) => {
 		// </Document>
 		<div className='modal w3-animate-zoom'>
 			<main className='resume-container'>
+				<button onClick={props.handleShowModal}>X</button>
 				<img className='resume-doc' src={Resume} alt='resume' />
 			</main>
 		</div>

@@ -21,6 +21,7 @@ const Home = (props) => {
 					<div>
 						{' '}
 						<About
+							handleShowModal={props.handleShowModal}
 							renderContactHandler={props.renderContactHandler}
 							renderResumeHandler={props.renderResumeHandler}
 							renderTechsHandler={props.renderTechsHandler}

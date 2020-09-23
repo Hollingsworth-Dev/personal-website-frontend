@@ -1,55 +1,56 @@
 .modal {
-	/* position: fixed;
+	position: absolute;
 	z-index: 100;
 	background-color: white;
 	border: 1px solid #ccc;
 	box-shadow: 1px 1px 1px black;
 	padding: 16px;
 	left: 15%;
-	top: 10%;
+	top: -30%;
+	margin-bottom: 100px;
 	box-sizing: border-box;
 
-	/* animation */
-	/* animation-name: stretch;
+	/* animation  */
+	animation-name: stretch;
 	animation-duration: 0.8s;
 	animation-timing-function: ease-out;
 	animation-delay: 0;
 	animation-direction: alternate;
-	animation-iteration-count: 1;  */
+	animation-iteration-count: 1;
 }
-/* @keyframes stretch {
+@keyframes stretch {
 	0% {
 		transform: scale(0.3);
 	}
 	100% {
 		transform: scale(1);
 	}
-} */
+}
 
-/* .resume-container {
+.resume-container {
 	width: auto;
-	height: auto;
+	height: 100%;
 	border: 1px solid rgb(194, 61, 61);
 }
 .resume-doc {
 	width: 100%;
 	height: auto;
-} */
+}
 
 @media (min-width: 600px) {
-	/* .modal {
+	.modal {
 		width: 800px;
 		left: calc(50% - 400px);
-	} */
+	}
 }
 @media (max-width: 600px) {
-	/* .modal {
+	.modal {
 		position: static;
 		display: flex;
 		justify-content: center;
-	} */
-	/* .resume-container {
+	}
+	.resume-container {
 		display: flex;
 		justify-content: center;
-	} */
+	}
 }
