@@ -1,0 +1,92 @@
+.contact-page {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	bottom: -100px;
+	padding: 100px;
+	margin-bottom: 200px;
+}
+.contact-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.contact-content header {
+	border: 2px solid var(--main-blue-color);
+
+	border-radius: 25px;
+	padding: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: transparent;
+}
+.contact-content main {
+	margin-top: 40px;
+	border: 2px solid var(--main-blue-color);
+
+	border-radius: 25px;
+	padding: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: transparent;
+}
+.contact-info ul {
+	list-style: none;
+}
+.contact-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contact-info li {
+	margin-bottom: 10px;
+	margin-left: 40px;
+	text-align: center;
+	border: 2px solid var(--main-blue-color);
+	border-radius: 15px;
+	padding: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: transparent;
+}
+.contact-info h2 {
+	text-align: center;
+	border: 2px solid var(--main-blue-color);
+	border-radius: 15px;
+	padding: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: transparent;
+}
+.contact-form-container h2 {
+	text-align: center;
+	border: 2px solid var(--main-blue-color);
+	border-radius: 15px;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: transparent;
+}
+.contact-form {
+	display: flex;
+	flex-direction: column;
+}
+.contact-form input {
+	margin-bottom: 15px;
+	height: 20px;
+}
+.contact-button {
+	align-self: flex-end;
+	margin-top: 10px;
+	height: 30px;
+	width: 70px;
+}
+.social-icons {
+	display: flex;
+	justify-content: center;
+}
+.social-icons a {
+	width: 5%;
+	margin-left: 20px;
+}

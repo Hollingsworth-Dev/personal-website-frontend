@@ -20,3 +20,7 @@
 .about-list-buttons button:focus {
 	outline: 0;
 }
+.about-group {
+	justify-content: center;
+	align-items: center;
+}
