@@ -1,18 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Contact from './Contact/Contact';
 import Resume from './Resume/Resume';
 import Technologies from './Technologies/Technologies';
 import './About.css';
+const scrollToRef = (ref) => window.scrollTo(0, ref.current.scrollIntoView());
 
 const About = () => {
+	const fieldRef = useRef();
+	const executeScroll = () => scrollToRef(fieldRef);
 	const [renderContact, setRenderContact] = useState(false);
 	const [renderResume, setRenderResume] = useState(false);
 	const [renderTechs, setRenderTechs] = useState(false);
+
 	const renderContactHandler = () => {
 		setRenderContact(!renderContact);
 		setRenderResume(false);
 		setRenderTechs(false);
+		executeScroll();
 	};
 	const renderResumeHandler = () => {
 		setRenderResume(!renderResume);
@@ -41,7 +46,7 @@ const About = () => {
 				{renderContact === true && (
 					<div>
 						{' '}
-						<Contact />
+						<Contact ref={fieldRef} />
 					</div>
 				)}
 				{renderResume === true && (
