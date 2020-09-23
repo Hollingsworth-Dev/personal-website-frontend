@@ -11,7 +11,7 @@ const About = (props) => {
 						onClick={props.renderContactHandler}>
 						contact
 					</button>
-					<button className='about-resume' onClick={props.renderResumeHandler}>
+					<button className='about-resume' onClick={props.handleShowModal}>
 						resumé
 					</button>
 					<button className='about-tech' onClick={props.renderTechsHandler}>

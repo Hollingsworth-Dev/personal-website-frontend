@@ -4,6 +4,7 @@ import Home from '../../components/Home/Home';
 import Contact from '../About/Contact/Contact';
 import Resume from '../About/Resume/Resume';
 import Technologies from '../About/Technologies/Technologies';
+import Modal from '../Modal';
 import './Main.css';
 
 const Main = () => {
@@ -44,6 +45,11 @@ const Main = () => {
 
 	//Projects section hooks
 
+	//Modal hooks
+	const [showModal, setShowModal] = useState(false);
+	const handleShowModal = () => {
+		setShowModal(!showModal);
+	};
 	return (
 		<div className='main-page'>
 			<div className='main-content'>
@@ -55,6 +61,7 @@ const Main = () => {
 				<div>
 					{renderHome === true && (
 						<Home
+							handleShowModal={handleShowModal}
 							renderAbout={renderAbout}
 							renderProject={renderProjects}
 							renderAboutHandler={renderAboutHandler}
@@ -67,15 +74,15 @@ const Main = () => {
 				</div>
 			</div>
 			{renderAbout === true && renderContact === true && (
-				<div className='contact-component'>
+				<div>
 					{' '}
 					<Contact />
 				</div>
 			)}
-			{renderAbout === true && renderResume === true && (
+			{renderAbout === true && showModal === true && (
 				<div>
 					{' '}
-					<Resume />
+					<Modal handleShowModal={handleShowModal} />
 				</div>
 			)}
 			{renderAbout === true && renderTechs === true && (
