@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import About from '../About/About';
 import Projects from '../Projects/Projects';
 import './Home.css';
+import LineTo from 'react-lineto';
 
 const Home = (props) => {
 	return (

@@ -7,6 +7,7 @@
 	padding: 100px;
 	margin-bottom: 200px;
 	align-items: center;
+	color: white;
 }
 .simon-page h1 {
 	border: 2px solid var(--main-blue-color);
@@ -28,6 +29,7 @@
 	padding-left: 50px;
 	padding-right: 50px;
 	background-color: transparent;
+	color: white;
 }
 .simon-desktop {
 	width: 900px;
