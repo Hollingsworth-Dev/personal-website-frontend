@@ -9,6 +9,7 @@ import Playlist from '../Projects/Playlist/Playlist';
 import Muse from '../Projects/Muse/Muse';
 import Goodegg from '../Projects/Goodegg/Goodegg';
 import './Main.css';
+import LineTo from 'react-lineto';
 
 const Main = () => {
 	const [renderHome, setRenderHome] = useState(false);
@@ -91,7 +92,7 @@ const Main = () => {
 					<h2>Software Developer</h2>
 				</button>
 
-				<div>
+				<div className='home-button'>
 					{renderHome === true && (
 						<Home
 							renderProjectsHandler={renderProjectsHandler}

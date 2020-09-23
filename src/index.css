@@ -1,6 +1,7 @@
 :root {
 	--main-blue-color: rgb(0, 208, 255);
 	--main-dark-purple-color: rgb(70, 4, 136);
+	--main-green-color: rgb(67, 223, 174);
 }
 body {
 	background-color: #171b20;

@@ -10,7 +10,7 @@
 }
 .tech-page header {
 	border: 2px solid var(--main-blue-color);
-
+	color: white;
 	border-radius: 25px;
 	padding: 10px;
 	padding-left: 50px;
@@ -28,6 +28,7 @@
 	padding-left: 50px;
 	padding-right: 50px;
 	background-color: transparent;
+	color: white;
 }
 .tech-content main {
 	display: flex;
