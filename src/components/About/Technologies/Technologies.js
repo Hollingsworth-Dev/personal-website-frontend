@@ -1,52 +1,54 @@
 import React from 'react';
+import './Technologies.css';
 
 const Technologies = () => {
 	return (
-		<div>
+		<div className='tech-page'>
 			<header>
 				<h1>Technologies</h1>
 			</header>
-			<main>
+
+			<main className='tech-content'>
 				{/* ideally icons for these techs */}
 				<div>
 					<h2>frontend</h2>
 					<main>
-						<div>HTML</div>
-						<div>CSS</div>
-						<div>React</div>
-						<div>JS</div>
-						<div>Bootstrap</div>
-						<div>Axios</div>
-						<div>flexbox</div>
-						<div>Handlebars</div>
+						<p>HTML</p>
+						<p>CSS</p>
+						<p>React</p>
+						<p>JS</p>
+						<p>Bootstrap</p>
+						<p>Axios</p>
+						<p>flexbox</p>
+						<p>Handlebars</p>
 					</main>
 				</div>
 				<div>
 					<h2>backend</h2>
 					<main>
-						<div>Express</div>
-						<div>Python</div>
-						<div>Django</div>
-						<div>SQL</div>
-						<div>PostgreSQL</div>
-						<div>Mongoose</div>
-						<div>MongoDB</div>
+						<p>Express</p>
+						<p>Python</p>
+						<p>Django</p>
+						<p>SQL</p>
+						<p>PostgreSQL</p>
+						<p>Mongoose</p>
+						<p>MongoDB</p>
 					</main>
 				</div>
 				<div>
 					<h2>other</h2>
 					<main>
-						<div>CRUD</div>
-						<div>API</div>
-						<div>Heroku</div>
-						<div>AWS</div>
-						<div>Node</div>
-						<div>REST</div>
-						<div>VSCode</div>
-						<div>Photoshop</div>
-						<div>InDesign</div>
-						<div>Illustrator</div>
-						<div>GitHub</div>
+						<p>CRUD</p>
+						<p>API</p>
+						<p>Heroku</p>
+						<p>AWS</p>
+						<p>Node</p>
+						<p>REST</p>
+						<p>VSCode</p>
+						<p>Photoshop</p>
+						<p>InDesign</p>
+						<p>Illustrator</p>
+						<p>GitHub</p>
 					</main>
 				</div>
 			</main>
