@@ -7,6 +7,7 @@ import {
 	AiOutlineGithub,
 	AiOutlineYoutube,
 } from 'react-icons/ai';
+import './Muse.css';
 
 const Muse = () => {
 	return (
@@ -19,21 +20,21 @@ const Muse = () => {
 						A digital environment for inspiration. Includes an inspirational
 						quote and beautiful image.
 					</p>
-					<div>
+					<div className='muse-icons'>
 						<a
 							href='https://muse-application-hollingsworth.herokuapp.com/'
 							target='_blank'>
-							<AiOutlineLink />
+							<AiOutlineLink size='lg' />
 						</a>
 						<a
 							href='https://github.com/Caleb-Hollingsworth/Muse'
 							target='_blank'>
-							<AiOutlineGithub />
+							<AiOutlineGithub size='lg' />
 						</a>
 						<a
 							href='https://www.youtube.com/watch?v=aCx2IJxdyGo'
 							target='_blank'>
-							<AiOutlineYoutube />
+							<AiOutlineYoutube size='lg' />
 						</a>
 					</div>
 				</div>
