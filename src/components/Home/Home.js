@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import About from '../About/About';
 import Projects from '../Projects/Projects';
 import './Home.css';
-import LineTo from 'react-lineto';
 
 const Home = (props) => {
 	return (

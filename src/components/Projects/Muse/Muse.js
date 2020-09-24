@@ -23,17 +23,20 @@ const Muse = () => {
 					<div className='muse-icons'>
 						<a
 							href='https://muse-application-hollingsworth.herokuapp.com/'
-							target='_blank'>
+							target='_blank'
+							rel='noopener noreferrer'>
 							<AiOutlineLink size='lg' />
 						</a>
 						<a
 							href='https://github.com/Caleb-Hollingsworth/Muse'
-							target='_blank'>
+							target='_blank'
+							rel='noopener noreferrer'>
 							<AiOutlineGithub size='lg' />
 						</a>
 						<a
 							href='https://www.youtube.com/watch?v=aCx2IJxdyGo'
-							target='_blank'>
+							target='_blank'
+							rel='noopener noreferrer'>
 							<AiOutlineYoutube size='lg' />
 						</a>
 					</div>

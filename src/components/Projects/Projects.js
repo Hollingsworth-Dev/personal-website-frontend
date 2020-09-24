@@ -1,9 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import Simon from './Simon/Simon';
-import Muse from './Muse/Muse';
-import Goodegg from './Goodegg/Goodegg';
-import Playlist from './Playlist/Playlist';
+import React from 'react';
+
 import './Projects.css';
 
 const Projects = (props) => {

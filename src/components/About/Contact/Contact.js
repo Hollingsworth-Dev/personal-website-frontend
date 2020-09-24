@@ -1,11 +1,10 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import {
 	AiOutlineGithub,
 	AiOutlineLinkedin,
 	AiOutlineInstagram,
 	AiOutlineTwitter,
 } from 'react-icons/ai';
-import Form from 'react-bootstrap/Form';
 import './Contact.css';
 
 const Contact = () => {
