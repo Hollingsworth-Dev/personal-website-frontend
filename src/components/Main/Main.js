@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Route, Link } from 'react-router-dom';
 import Home from '../../components/Home/Home';
 import Contact from '../About/Contact/Contact';
 import Technologies from '../About/Technologies/Technologies';
@@ -9,7 +8,6 @@ import Playlist from '../Projects/Playlist/Playlist';
 import Muse from '../Projects/Muse/Muse';
 import Goodegg from '../Projects/Goodegg/Goodegg';
 import './Main.css';
-import LineTo from 'react-lineto';
 
 const Main = () => {
 	const [renderHome, setRenderHome] = useState(false);

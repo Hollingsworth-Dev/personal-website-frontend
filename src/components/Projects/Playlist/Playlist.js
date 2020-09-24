@@ -2,11 +2,7 @@ import React from 'react';
 import Mobile from '../../../Images/PlayList/PlayList-mobile.png';
 import Home from '../../../Images/PlayList/PlayList-home.png';
 import View from '../../../Images/PlayList/PlayList-view.png';
-import {
-	AiOutlineLink,
-	AiOutlineGithub,
-	AiOutlineMedium,
-} from 'react-icons/ai';
+import { AiOutlineLink, AiOutlineGithub } from 'react-icons/ai';
 import './Playlist.css';
 const Playlist = () => {
 	return (
@@ -21,10 +17,16 @@ const Playlist = () => {
 					</p>
 
 					<div className='playlist-icons'>
-						<a href='https://salty-cliffs-88075.herokuapp.com/' target='_blank'>
+						<a
+							href='https://salty-cliffs-88075.herokuapp.com/'
+							target='_blank'
+							rel='noopener noreferrer'>
 							<AiOutlineLink size='lg' />
 						</a>
-						<a href='https://github.com/teamscrum2000' target='_blank'>
+						<a
+							href='https://github.com/teamscrum2000'
+							target='_blank'
+							rel='noopener noreferrer'>
 							<AiOutlineGithub size='lg' />
 						</a>
 						{/* <a href=''>
