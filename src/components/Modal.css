@@ -6,7 +6,7 @@
 	box-shadow: 1px 1px 1px black;
 	padding: 16px;
 	left: 15%;
-	top: -30%;
+
 	margin-bottom: 100px;
 	box-sizing: border-box;
 
@@ -31,6 +31,9 @@
 	width: auto;
 	height: 100%;
 	border: 1px solid rgb(194, 61, 61);
+}
+.resume-close-button {
+	color: black;
 }
 .resume-doc {
 	width: 100%;

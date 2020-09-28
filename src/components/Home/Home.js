@@ -1,12 +1,10 @@
 import React from 'react';
-import About from '../About/About';
-import Projects from '../Projects/Projects';
 import Headshot from '../../Images/Headshot/Headshot.jpg';
 import './Home.css';
 
 const Home = (props) => {
 	return (
-		<div className='home-page'>
+		<div className='home-page' id='welcome'>
 			<main>
 				<h2>meet caleb</h2>
 				<img src={Headshot} alt='headshot' />

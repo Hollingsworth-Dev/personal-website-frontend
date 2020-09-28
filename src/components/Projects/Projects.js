@@ -4,7 +4,7 @@ import './Projects.css';
 
 const Projects = (props) => {
 	return (
-		<div className='projects-list'>
+		<div className='projects-list' id='projects'>
 			<div className='projects-buttons'>
 				<button className='projects-simon' onClick={props.renderSimonHandler}>
 					SIMON

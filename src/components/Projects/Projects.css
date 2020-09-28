@@ -6,6 +6,7 @@
 	height: 100vh;
 }
 .projects-buttons button {
+	height: 50px;
 	width: 150px;
 	margin-right: 30px;
 	margin-bottom: 20px;
