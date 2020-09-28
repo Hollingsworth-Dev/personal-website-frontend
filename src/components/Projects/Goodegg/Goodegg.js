@@ -12,7 +12,7 @@ import './Goodegg.css';
 
 const Goodegg = () => {
 	return (
-		<div className='goodegg-page'>
+		<div className='goodegg-page' id='goodegg'>
 			<h1>GoodEgg</h1>
 			<main className='goodegg-content'>
 				<div className='goodegg-message'>

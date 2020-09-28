@@ -9,7 +9,7 @@ import './Contact.css';
 
 const Contact = () => {
 	return (
-		<div className='contact-page'>
+		<div className='contact-page' id='contact'>
 			<div className='contact-content'>
 				<header>
 					{/* <img src='' alt=''>

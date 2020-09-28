@@ -1,46 +1,16 @@
 import React from 'react';
-import About from '../About/About';
-import Projects from '../Projects/Projects';
+import Headshot from '../../Images/Headshot/Headshot.jpg';
 import './Home.css';
 
-const Home = (props) => {
+const Home = () => {
 	return (
-		<div className='home-page'>
-			<div className='home-buttons'>
-				<button className='home-about' onClick={props.renderAboutHandler}>
-					About
-				</button>
-
-				<button className='home-projects' onClick={props.renderProjectsHandler}>
-					Projects
-				</button>
-			</div>
-			<div className='about-page'>
-				{props.renderAbout === true && (
-					<div>
-						{' '}
-						<About
-							handleShowModal={props.handleShowModal}
-							renderContactHandler={props.renderContactHandler}
-							renderResumeHandler={props.renderResumeHandler}
-							renderTechsHandler={props.renderTechsHandler}
-						/>
-					</div>
-				)}
-			</div>
-			<div className='projects-page'>
-				{props.renderProjects === true && (
-					<div>
-						{' '}
-						<Projects
-							renderSimonHandler={props.renderSimonHandler}
-							renderMuseHandler={props.renderMuseHandler}
-							renderGoodeggHandler={props.renderGoodeggHandler}
-							renderPlaylistHandler={props.renderPlaylistHandler}
-						/>
-					</div>
-				)}
-			</div>
+		<div className='home-page' id='welcome'>
+			<main>
+				<h2>meet caleb</h2>
+				<img src={Headshot} alt='headshot' />
+				<p>Small bio goes here...</p>
+				<div>skills go here...</div>
+			</main>
 		</div>
 	);
 };

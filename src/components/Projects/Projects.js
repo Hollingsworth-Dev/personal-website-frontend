@@ -1,28 +1,47 @@
 import React from 'react';
-
+import { Link } from 'react-scroll';
 import './Projects.css';
 
 const Projects = (props) => {
 	return (
-		<div className='projects-list'>
+		<div className='projects-list' id='projects'>
 			<div className='projects-buttons'>
-				<button className='projects-simon' onClick={props.renderSimonHandler}>
-					SIMON
-				</button>
-
-				<button className='projects-simon' onClick={props.renderMuseHandler}>
-					MUSE
-				</button>
-
-				<button
-					className='projects-simon'
-					onClick={props.renderPlaylistHandler}>
-					PlayList
-				</button>
-
-				<button className='projects-simon' onClick={props.renderGoodeggHandler}>
-					GoodEgg
-				</button>
+				<Link
+					activeClass='active'
+					to='simon'
+					spy={true}
+					smooth={true}
+					offset={-300}
+					duration={500}>
+					<button className='projects-simon'>SIMON</button>
+				</Link>
+				<Link
+					activeClass='active'
+					to='muse'
+					spy={true}
+					smooth={true}
+					offset={-300}
+					duration={500}>
+					<button className='projects-simon'>MUSE</button>
+				</Link>
+				<Link
+					activeClass='active'
+					to='playlist'
+					spy={true}
+					smooth={true}
+					offset={-300}
+					duration={500}>
+					<button className='projects-simon'>PlayList</button>
+				</Link>
+				<Link
+					activeClass='active'
+					to='goodegg'
+					spy={true}
+					smooth={true}
+					offset={-300}
+					duration={500}>
+					<button className='projects-simon'>GoodEgg</button>
+				</Link>
 			</div>
 		</div>
 	);
