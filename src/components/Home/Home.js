@@ -2,7 +2,7 @@ import React from 'react';
 import Headshot from '../../Images/Headshot/Headshot.jpg';
 import './Home.css';
 
-const Home = (props) => {
+const Home = () => {
 	return (
 		<div className='home-page' id='welcome'>
 			<main>

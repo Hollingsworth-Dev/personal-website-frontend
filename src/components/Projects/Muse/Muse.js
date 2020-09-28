@@ -11,7 +11,7 @@ import './Muse.css';
 
 const Muse = () => {
 	return (
-		<div className='muse-page'>
+		<div className='muse-page' id='muse'>
 			<h1>MUSE</h1>
 			<main className='muse-content'>
 				<div className='muse-message'>

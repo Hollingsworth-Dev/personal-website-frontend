@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Home from '../../components/Home/Home';
 import Contact from '../About/Contact/Contact';
 import Technologies from '../About/Technologies/Technologies';
-
 import Simon from '../Projects/Simon/Simon';
 import Playlist from '../Projects/Playlist/Playlist';
 import Muse from '../Projects/Muse/Muse';
@@ -80,10 +79,12 @@ const Main = () => {
 	return (
 		<div className='main-page' id='home'>
 			<div className='main-content'>
-				<button className='main-button' onClick={renderHomeHandler}>
-					<h1>Caleb Hollingsworth</h1>
-					<h2>Software Developer</h2>
-				</button>
+				<div>
+					<button className='main-button' onClick={renderHomeHandler}>
+						<h1>Caleb Hollingsworth</h1>
+						<h2>Software Developer</h2>
+					</button>
+				</div>
 			</div>
 			{renderHome === true && (
 				<NavBar

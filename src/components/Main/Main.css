@@ -2,12 +2,13 @@
 	height: 100vh;
 	width: 100vw;
 	position: relative;
-	top: 30%;
 }
 .main-content {
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
+	margin-top: 300px;
+	margin-bottom: 50vh;
 }
 .main-button {
 	border: 2px solid var(--main-dark-purple-color);
@@ -18,13 +19,26 @@
 	background-color: transparent;
 	color: white;
 }
-.main-button:hover {
-	opacity: 0.6;
-}
-.main-button:active {
-	outline: none;
-	border: none;
-}
+
 .main-button:focus {
 	outline: 0;
+	border-color: var(--main-blue-color);
+}
+.main-button:hover {
+	animation: rotateBorder 3s infinite;
+}
+
+@keyframes rotateBorder {
+	25% {
+		border-color: var(--main-green-color);
+	}
+	50% {
+		border-color: var(--main-blue-color);
+	}
+	75% {
+		border-color: var(--main-green-color);
+	}
+	100% {
+		border-color: var(--main-dark-purple-color);
+	}
 }

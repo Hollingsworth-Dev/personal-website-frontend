@@ -1,8 +1,5 @@
 import React from 'react';
 import './NavBar.css';
-import About from '../About/About';
-import Projects from '../Projects/Projects';
-import Home from '../Home/Home';
 import { Link } from 'react-scroll';
 
 const NavBar = (props) => {
@@ -14,7 +11,7 @@ const NavBar = (props) => {
 					to='home'
 					spy={true}
 					smooth={true}
-					offset={-70}
+					offset={-500}
 					duration={500}>
 					<button class='nav-home'>Home</button>
 				</Link>
