@@ -5,6 +5,7 @@
 	bottom: -100px;
 	padding: 100px;
 	margin-bottom: 200px;
+	height: 100vh;
 }
 .contact-content {
 	display: flex;

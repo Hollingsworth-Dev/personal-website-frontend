@@ -1,9 +1,13 @@
 .projects-buttons {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	justify-content: center;
 	margin-top: 20px;
+	height: 100vh;
 }
 .projects-buttons button {
+	width: 150px;
+	margin-right: 30px;
 	margin-bottom: 20px;
 	border: 2px solid var(--main-blue-color);
 	border-radius: 10px;

@@ -7,6 +7,9 @@ import Simon from '../Projects/Simon/Simon';
 import Playlist from '../Projects/Playlist/Playlist';
 import Muse from '../Projects/Muse/Muse';
 import Goodegg from '../Projects/Goodegg/Goodegg';
+import Projects from '../Projects/Projects';
+import About from '../About/About';
+import NavBar from '../NavBar/NavBar';
 import './Main.css';
 
 const Main = () => {
@@ -16,7 +19,6 @@ const Main = () => {
 	};
 	//About section hooks
 	const [renderContact, setRenderContact] = useState(false);
-	const [renderResume, setRenderResume] = useState(false);
 	const [renderTechs, setRenderTechs] = useState(false);
 	const [renderAbout, setRenderAbout] = useState(false);
 
@@ -27,18 +29,11 @@ const Main = () => {
 
 	const renderContactHandler = () => {
 		setRenderContact(!renderContact);
-		setRenderResume(false);
-		setRenderTechs(false);
-	};
-	const renderResumeHandler = () => {
-		setRenderResume(!renderResume);
-		setRenderContact(false);
 		setRenderTechs(false);
 	};
 	const renderTechsHandler = () => {
 		setRenderTechs(!renderTechs);
 		setRenderContact(false);
-		setRenderResume(false);
 	};
 
 	//Projects section hooks
@@ -82,6 +77,12 @@ const Main = () => {
 	const handleShowModal = () => {
 		setShowModal(!showModal);
 	};
+
+	//Home hook
+	const [showHome, setShowHome] = useState(false);
+	const handleShowHome = () => {
+		setShowHome(!showHome);
+	};
 	return (
 		<div className='main-page'>
 			<div className='main-content'>
@@ -89,71 +90,81 @@ const Main = () => {
 					<h1>Caleb Hollingsworth</h1>
 					<h2>Software Developer</h2>
 				</button>
-
-				<div className='home-button'>
-					{renderHome === true && (
-						<Home
-							renderProjectsHandler={renderProjectsHandler}
-							renderProjects={renderProjects}
-							renderSimonHandler={renderSimonHandler}
-							renderMuseHandler={renderMuseHandler}
-							renderGoodeggHandler={renderGoodeggHandler}
-							renderPlaylistHandler={renderPlaylistHandler}
-							handleShowModal={handleShowModal}
-							renderAbout={renderAbout}
-							renderProject={renderProjects}
-							renderAboutHandler={renderAboutHandler}
-							renderContactHandler={renderContactHandler}
-							renderResumeHandler={renderResumeHandler}
-							renderTechsHandler={renderTechsHandler}
-						/>
-					)}
-				</div>
 			</div>
-			{renderAbout === true && renderContact === true && (
+			{renderHome === true && (
 				<div>
-					{' '}
+					<NavBar
+						handleShowHome={handleShowHome}
+						renderProjectsHandler={renderProjectsHandler}
+						renderProjects={renderProjects}
+						renderAbout={renderAbout}
+						renderProject={renderProjects}
+						renderAboutHandler={renderAboutHandler}
+					/>
+				</div>
+			)}
+			{renderHome === true && showHome === true && (
+				<div>
+					<Home />
+				</div>
+			)}
+			{renderHome === true && renderAbout === true && (
+				<div>
+					<About
+						renderContactHandler={renderContactHandler}
+						handleShowModal={handleShowModal}
+						renderTechsHandler={renderTechsHandler}
+					/>
+				</div>
+			)}
+			{/* individual About sections */}
+			{renderHome === true && renderContact === true && (
+				<div>
 					<Contact />
 				</div>
 			)}
-			{renderAbout === true && showModal === true && (
+			{renderHome === true && renderTechs === true && (
 				<div>
-					{' '}
-					<Modal handleShowModal={handleShowModal} />
-				</div>
-			)}
-			{renderAbout === true && renderTechs === true && (
-				<div>
-					{' '}
 					<Technologies />
 				</div>
 			)}
-			<div>
-				{renderProjects === true && renderSimon === true && (
-					<div>
-						{' '}
-						<Simon />
-					</div>
-				)}
-				{renderProjects === true && renderMuse === true && (
-					<div>
-						{' '}
-						<Muse />
-					</div>
-				)}
-				{renderProjects === true && renderGoodegg === true && (
-					<div>
-						{' '}
-						<Goodegg />
-					</div>
-				)}
-				{renderProjects === true && renderPlaylist === true && (
-					<div>
-						{' '}
-						<Playlist />
-					</div>
-				)}
-			</div>
+			{renderHome === true && showModal === true && (
+				<div>
+					<Modal handleShowModal={handleShowModal} />
+				</div>
+			)}
+
+			{renderHome === true && renderProjects === true && (
+				<div>
+					<Projects
+						renderSimonHandler={renderSimonHandler}
+						renderMuseHandler={renderMuseHandler}
+						renderGoodeggHandler={renderGoodeggHandler}
+						renderPlaylistHandler={renderPlaylistHandler}
+					/>
+				</div>
+			)}
+			{/* individual projects */}
+			{renderHome === true && renderSimon === true && (
+				<div>
+					<Simon />
+				</div>
+			)}
+			{renderHome === true && renderPlaylist === true && (
+				<div>
+					<Playlist />
+				</div>
+			)}
+			{renderHome === true && renderMuse === true && (
+				<div>
+					<Muse />
+				</div>
+			)}
+			{renderHome === true && renderGoodegg === true && (
+				<div>
+					<Goodegg />
+				</div>
+			)}
 		</div>
 	);
 };

@@ -8,6 +8,7 @@
 	margin-bottom: 200px;
 	align-items: center;
 	color: white;
+	height: 100vh;
 }
 .playlist-page h1 {
 	border: 2px solid var(--main-blue-color);

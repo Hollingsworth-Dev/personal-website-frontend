@@ -2,55 +2,5 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-}
-.home-buttons {
-	display: flex;
-	flex-direction: column;
-	margin-left: 250px;
-}
-.home-about {
-	margin-bottom: 100px;
-	border: 2px solid var(--main-green-color);
-	border-radius: 10px;
-	padding: 10px;
-	padding-left: 20px;
-	padding-right: 20px;
-	background-color: transparent;
-	color: white;
-}
-.home-about:hover {
-	opacity: 0.6;
-}
-.home-about:active {
-	outline: none;
-	border: none;
-}
-.home-about:focus {
-	outline: 0;
-}
-.home-projects {
-	border: 2px solid var(--main-green-color);
-	border-radius: 10px;
-	padding: 10px;
-	padding-left: 20px;
-	padding-right: 20px;
-	background-color: transparent;
-	color: white;
-}
-.home-projects:hover {
-	opacity: 0.6;
-}
-.home-projects:active {
-	outline: none;
-	border: none;
-}
-.home-projects:focus {
-	outline: 0;
-}
-.about-page {
-	margin-left: 200px;
-	margin-bottom: 145px;
-}
-.projects-page {
-	margin-top: 145px;
+	height: 100vh;
 }
