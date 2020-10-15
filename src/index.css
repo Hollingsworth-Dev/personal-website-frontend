@@ -2,8 +2,34 @@
 	--main-blue-color: rgb(0, 208, 255);
 	--main-dark-purple-color: rgb(70, 4, 136);
 	--main-green-color: rgb(67, 223, 174);
+	--main-grey-color: #171b20;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+* {
+	font-family: 'Quicksand', sans-serif;
 }
 body {
-	background-color: #171b20;
+	background: linear-gradient(
+		-60deg,
+		#300065,
+		#5908fa,
+		#3d2cfc,
+		#0e74f1,
+		#47f5de
+	);
+	background-size: 3000% 3000%;
+	animation: background-gradient 30s ease infinite;
 	margin: 0;
+}
+@keyframes background-gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
