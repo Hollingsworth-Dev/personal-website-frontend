@@ -5,6 +5,7 @@
 	align-items: center;
 	height: 100vh;
 	margin: 20px;
+	margin-bottom: 300px;
 }
 .home-content {
 	display: flex;
@@ -33,6 +34,7 @@
 .home-headshot {
 	border-radius: 15px;
 	border: 2px solid var(--main-blue-color);
+	height: 290px;
 }
 .home-headshot img {
 	height: 250px;
@@ -53,12 +55,18 @@
 	margin-top: -30px;
 	margin-left: 10px;
 	text-decoration-line: overline;
+	text-decoration-color: var(--main-blue-color);
 }
 .home-bio {
 	margin-left: 20px;
 	font-size: 1.2em;
 	text-align: right;
 	hyphens: none;
+}
+.home-bio main {
+	font-size: 30px;
+	display: flex;
+	justify-content: space-between;
 }
 .home-bio-container {
 	border-radius: 15px;

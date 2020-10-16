@@ -10,16 +10,15 @@
 	font-family: 'Quicksand', sans-serif;
 }
 body {
-	background: linear-gradient(
-		-60deg,
-		#300065,
-		#5908fa,
-		#3d2cfc,
-		#0e74f1,
-		#47f5de
+	/* background: linear-gradient(
+		60deg,
+		var(--main-grey-color),
+		rgb(63, 63, 63),
+		rgb(136, 136, 136)
 	);
-	background-size: 3000% 3000%;
-	animation: background-gradient 30s ease infinite;
+	background-size: 2000% 2000%;
+	animation: background-gradient 30s ease infinite; */
+	background-color: var(--main-grey-color);
 	margin: 0;
 }
 @keyframes background-gradient {

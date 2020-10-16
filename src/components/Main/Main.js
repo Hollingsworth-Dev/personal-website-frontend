@@ -10,11 +10,18 @@ import Projects from '../Projects/Projects';
 import About from '../About/About';
 import NavBar from '../NavBar/NavBar';
 import './Main.css';
+import '../../vivify.min.css';
 
 const Main = () => {
 	const [renderHome, setRenderHome] = useState(false);
+	const [addPopOut, setPopOut] = useState('');
 	const renderHomeHandler = () => {
-		setRenderHome(!renderHome);
+		addPopOut === '' ? setRenderHome(true) : setRenderHome(false);
+		renderPopOutHandler();
+	};
+	const renderPopOutHandler = () => {
+		addPopOut === '' ? setPopOut('popOut') : setPopOut('');
+		renderHome === true ? setRenderHome(false) : setRenderHome(true);
 	};
 	//About section hooks
 	const [renderContact, setRenderContact] = useState(false);
@@ -79,7 +86,7 @@ const Main = () => {
 	return (
 		<div className='main-page' id='home'>
 			<div className='main-content'>
-				<div>
+				<div className={`vivify ${addPopOut}`}>
 					<button className='main-button' onClick={renderHomeHandler}>
 						<h1>Caleb Hollingsworth</h1>
 						<h2>Software Developer</h2>
@@ -94,6 +101,8 @@ const Main = () => {
 					renderAbout={renderAbout}
 					renderProject={renderProjects}
 					renderAboutHandler={renderAboutHandler}
+					renderPopOutHandler={renderPopOutHandler}
+					renderHomeHandler={renderHomeHandler}
 				/>
 			)}
 			{renderHome === true && <Home />}

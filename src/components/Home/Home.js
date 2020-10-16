@@ -1,5 +1,18 @@
 import React from 'react';
 import Headshot from '../../Images/Headshot/Headshot.jpg';
+import {
+	DiBootstrap,
+	DiHtml5,
+	DiDjango,
+	DiMongodb,
+	DiPython,
+	DiCss3Full,
+	DiIllustrator,
+	DiJsBadge,
+	DiReact,
+	DiNodejsSmall,
+	DiPhotoshop,
+} from 'react-icons/di';
 import './Home.css';
 
 const Home = () => {
@@ -24,29 +37,22 @@ const Home = () => {
 								classical music, I’m a thick-skinned and patient team player who
 								is motivated by progress and successful collaboration.
 							</p>
-							<p className='home-bio'>
-								I initially pursued vocal performance at Delta State University
-								in 2010, and later went on to complete my masters degree in
-								vocal-performance with a focus in operatic direction at
-								University of North Texas. While working on my masters, I was
-								introduced to software development by colleague who stated that
-								he thought I held the right mind, work ethic, and necessary
-								computer skills to take on learning to become a coder.
-								Fast-forward to spring of 2020, I had completed a large amount
-								of free online resources such as freecodecamp and codeacademy.
-								After losing quite a few performance gigs and teaching jobs due
-								to COVID-19, I decided it was time to sharpen my software
-								development skills and take on software engineering immersive
-								bootcamp. This was a big decision for me...to fully commit to a
-								complete career change.
-							</p>
-							<p className='home-bio'>
-								In mid-September of 2020, I finally completed my SEI coursework
-								and left with a wealth of knowledge, a complete portfolio of
-								beautiful projects, and a massive amount experience with front
-								end and back end technologies, as well as a solid foundation of
-								collaboration skills to work in a professional dev environment.
-							</p>
+							<div className='home-bio'>
+								<h4>skills overview</h4>
+								<main>
+									<DiHtml5 />
+									<DiCss3Full />
+									<DiJsBadge />
+									<DiReact />
+									<DiDjango />
+									<DiMongodb />
+									<DiPython />
+									<DiNodejsSmall />
+									<DiBootstrap />
+									<DiPhotoshop />
+									<DiIllustrator />
+								</main>
+							</div>
 						</div>
 					</div>
 				</main>
