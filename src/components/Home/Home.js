@@ -37,7 +37,7 @@ const Home = () => {
 								classical music, I’m a thick-skinned and patient team player who
 								is motivated by progress and successful collaboration.
 							</p>
-							<div className='home-bio'>
+							<div className='skill-tree'>
 								<h4>skills overview</h4>
 								<main>
 									<DiHtml5 />

@@ -58,13 +58,21 @@
 	text-decoration-color: var(--main-blue-color);
 }
 .home-bio {
+	text-align: right;
+	margin-left: 20px;
+	font-size: 1.2em;
+}
+.skill-tree {
 	margin-left: 20px;
 	font-size: 1.2em;
 	text-align: right;
 	hyphens: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-.home-bio main {
-	font-size: 30px;
+.skill-tree main {
+	font-size: 40px;
 	display: flex;
 	justify-content: space-between;
 }
