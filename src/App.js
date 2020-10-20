@@ -42,38 +42,38 @@ const StyledSVG = styled(ImportedSvg)`
 	}
 
 	.purple-rect1 {
-		animation: ${rotate} infinite 30s linear;
+		animation: ${rotate} infinite 40s linear;
 	}
 	.purple-rect2 {
-		animation: ${rotate} infinite 40s linear;
+		animation: ${rotate} infinite 50s linear;
 		animation-delay: 0.5s;
 	}
 	.purple-rect3 {
-		animation: ${rotate} infinite 30s linear;
+		animation: ${rotate} infinite 40s linear;
 		animation-delay: 1s;
 	}
 	.blue-rect1 {
-		animation: ${rotate} infinite 40s linear;
+		animation: ${rotate} infinite 50s linear;
 		animation-delay: 1.5s;
 	}
 	.blue-rect2 {
-		animation: ${rotate} infinite 30s linear;
+		animation: ${rotate} infinite 40s linear;
 		animation-delay: 2s;
 	}
 	.blue-rect3 {
-		animation: ${rotate} infinite 40s linear;
+		animation: ${rotate} infinite 50s linear;
 		animation-delay: 2.5s;
 	}
 	.green-rect1 {
-		animation: ${rotate} infinite 30s linear;
+		animation: ${rotate} infinite 40s linear;
 		animation-delay: 3s;
 	}
 	.green-rect2 {
-		animation: ${rotate} infinite 40s linear;
+		animation: ${rotate} infinite 50s linear;
 		animation-delay: 3.5s;
 	}
 	.green-rect3 {
-		animation: ${rotate} infinite 30s linear;
+		animation: ${rotate} infinite 40s linear;
 		animation-delay: 4s;
 	}
 `;
