@@ -3,32 +3,15 @@
 	--main-dark-purple-color: rgb(70, 4, 136);
 	--main-green-color: rgb(67, 223, 174);
 	--main-grey-color: #171b20;
+	--main-grey-transparent-color: #171b20e5;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 * {
 	font-family: 'Quicksand', sans-serif;
 }
+
 body {
-	/* background: linear-gradient(
-		60deg,
-		var(--main-grey-color),
-		rgb(63, 63, 63),
-		rgb(136, 136, 136)
-	);
-	background-size: 2000% 2000%;
-	animation: background-gradient 30s ease infinite; */
 	background-color: var(--main-grey-color);
 	margin: 0;
-}
-@keyframes background-gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
 }

@@ -21,15 +21,15 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
+	background-color: var(--main-grey-transparent-color);
 }
 .home-content h2 {
 	border: 2px solid var(--main-blue-color);
-
 	border-radius: 15px;
 	padding: 10px;
 	padding-left: 50px;
 	padding-right: 50px;
-	background-color: transparent;
+	background-color: var(--main-grey-transparent-color);
 }
 .home-headshot {
 	border-radius: 15px;

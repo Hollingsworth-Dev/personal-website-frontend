@@ -15,11 +15,12 @@
 	border: 2px solid var(--main-blue-color);
 	border-radius: 10px;
 	padding: 10px;
-	background-color: transparent;
+	background-color: var(--main-grey-transparent-color);
 	color: white;
 }
 .projects-buttons button:hover {
-	opacity: 0.6;
+	background-color: var(--main-grey-color);
+	border-color: var(--main-dark-purple-color);
 }
 .projects-buttons button:active {
 	outline: none;
