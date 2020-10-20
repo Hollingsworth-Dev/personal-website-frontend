@@ -6,8 +6,8 @@ import Main from './components/Main/Main';
 function App() {
 	return (
 		<div className='App'>
+			<img className='Squares' src={Squares} alt='squares' />
 			<Main />
-			<div className='Squares'>{Squares}</div>
 		</div>
 	);
 }
