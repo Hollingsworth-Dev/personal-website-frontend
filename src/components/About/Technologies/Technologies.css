@@ -7,6 +7,7 @@
 	padding: 100px;
 	margin-bottom: 200px;
 	align-items: center;
+	height: 100vh;
 }
 .tech-page header {
 	border: 2px solid var(--main-blue-color);
@@ -15,7 +16,7 @@
 	padding: 10px;
 	padding-left: 50px;
 	padding-right: 50px;
-	background-color: transparent;
+	background-color: var(--main-grey-transparent-color);
 }
 .tech-content {
 	margin-top: 40px;
@@ -27,7 +28,7 @@
 	padding: 10px;
 	padding-left: 50px;
 	padding-right: 50px;
-	background-color: transparent;
+	background-color: var(--main-grey-transparent-color);
 	color: white;
 }
 .tech-content main {

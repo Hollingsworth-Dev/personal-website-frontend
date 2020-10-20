@@ -1,56 +1,84 @@
 .home-page {
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	align-items: center;
+	height: 100vh;
+	margin: 20px;
+	margin-bottom: 300px;
 }
-.home-buttons {
+.home-content {
 	display: flex;
 	flex-direction: column;
-	margin-left: 250px;
-}
-.home-about {
-	margin-bottom: 100px;
-	border: 2px solid var(--main-green-color);
-	border-radius: 10px;
-	padding: 10px;
-	padding-left: 20px;
-	padding-right: 20px;
-	background-color: transparent;
+	justify-content: center;
+	align-items: center;
 	color: white;
 }
-.home-about:hover {
-	opacity: 0.6;
+.home-content main {
+	border: 2px solid var(--main-blue-color);
+	border-radius: 15px;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	background-color: var(--main-grey-transparent-color);
 }
-.home-about:active {
-	outline: none;
-	border: none;
-}
-.home-about:focus {
-	outline: 0;
-}
-.home-projects {
-	border: 2px solid var(--main-green-color);
-	border-radius: 10px;
+.home-content h2 {
+	border: 2px solid var(--main-blue-color);
+	border-radius: 15px;
 	padding: 10px;
-	padding-left: 20px;
-	padding-right: 20px;
-	background-color: transparent;
-	color: white;
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: var(--main-grey-transparent-color);
 }
-.home-projects:hover {
-	opacity: 0.6;
+.home-headshot {
+	border-radius: 15px;
+	border: 2px solid var(--main-blue-color);
+	height: 290px;
 }
-.home-projects:active {
-	outline: none;
-	border: none;
+.home-headshot img {
+	height: 250px;
+	border-radius: 30px;
+	padding: 20px;
 }
-.home-projects:focus {
-	outline: 0;
+.home-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 }
-.about-page {
-	margin-left: 200px;
-	margin-bottom: 145px;
+.home-info h4 {
+	font-size: 25px;
 }
-.projects-page {
-	margin-top: 145px;
+.brand-state {
+	font-size: 0.9em;
+	font-style: italic;
+	margin-top: -30px;
+	margin-left: 10px;
+	text-decoration-line: overline;
+	text-decoration-color: var(--main-blue-color);
+}
+.home-bio {
+	text-align: right;
+	margin-left: 20px;
+	font-size: 1.2em;
+}
+.skill-tree {
+	margin-left: 20px;
+	font-size: 1.2em;
+	text-align: right;
+	hyphens: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.skill-tree main {
+	font-size: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+.home-bio-container {
+	border-radius: 15px;
+	border: 2px solid var(--main-blue-color);
+	margin-left: 20px;
+	padding: 15px;
 }

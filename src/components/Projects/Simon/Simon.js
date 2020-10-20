@@ -7,7 +7,7 @@ import './Simon.css';
 
 const Simon = () => {
 	return (
-		<div className='simon-page'>
+		<div className='simon-page' id='simon'>
 			<h1>SIMON</h1>
 
 			<main className='simon-content'>

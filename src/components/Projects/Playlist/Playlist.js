@@ -6,7 +6,7 @@ import { AiOutlineLink, AiOutlineGithub } from 'react-icons/ai';
 import './Playlist.css';
 const Playlist = () => {
 	return (
-		<div className='playlist-page'>
+		<div className='playlist-page' id='playlist'>
 			<h1>PlayList</h1>
 			<main className='playlist-content'>
 				<div className='playlist-message'>

@@ -2,9 +2,8 @@
 	display: flex;
 	justify-content: center;
 	position: relative;
-	bottom: -100px;
 	padding: 100px;
-	margin-bottom: 200px;
+	height: 100vh;
 }
 .contact-content {
 	display: flex;
@@ -15,22 +14,20 @@
 }
 .contact-content header {
 	border: 2px solid var(--main-blue-color);
-
 	border-radius: 25px;
 	padding: 10px;
 	padding-left: 50px;
 	padding-right: 50px;
-	background-color: transparent;
+	background-color: var(--main-grey-transparent-color);
 }
 .contact-content main {
 	margin-top: 40px;
 	border: 2px solid var(--main-blue-color);
-
 	border-radius: 25px;
 	padding: 10px;
 	padding-left: 50px;
 	padding-right: 50px;
-	background-color: transparent;
+	background-color: var(--main-grey-transparent-color);
 }
 .contact-info ul {
 	list-style: none;
@@ -90,4 +87,7 @@
 .social-icons a {
 	width: 5%;
 	margin-left: 20px;
+}
+.social-icons a:hover {
+	color: var(--main-green-color);
 }

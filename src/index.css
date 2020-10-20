@@ -2,7 +2,16 @@
 	--main-blue-color: rgb(0, 208, 255);
 	--main-dark-purple-color: rgb(70, 4, 136);
 	--main-green-color: rgb(67, 223, 174);
+	--main-grey-color: #171b20;
+	--main-grey-transparent-color: #171b20e5;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+* {
+	font-family: 'Quicksand', sans-serif;
+}
+
 body {
-	background-color: #171b20;
+	background-color: var(--main-grey-color);
+	margin: 0;
 }
