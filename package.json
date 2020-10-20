@@ -20,7 +20,11 @@
 		"react-router": "^5.2.0",
 		"react-router-dom": "^5.2.0",
 		"react-scripts": "3.4.3",
-		"react-scroll": "^1.8.1"
+		"react-scroll": "^1.8.1",
+		"styled-components": "^5.2.0"
+	},
+	"resolutions": {
+		"styled-components": "^5"
 	},
 	"scripts": {
 		"start": "react-scripts start",
@@ -42,5 +46,9 @@
 			"last 1 firefox version",
 			"last 1 safari version"
 		]
+	},
+	"devDependencies": {
+		"babel-plugin-styled-components": "^1.11.1",
+		"file-loader": "^6.1.1"
 	}
 }

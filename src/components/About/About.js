@@ -18,7 +18,7 @@ const About = (props) => {
 						to='contact'
 						spy={true}
 						smooth={true}
-						offset={-70}
+						offset={70}
 						duration={500}>
 						<button className='about-contact'>contact</button>
 					</Link>
@@ -28,7 +28,7 @@ const About = (props) => {
 						to='techs'
 						spy={true}
 						smooth={true}
-						offset={-70}
+						offset={20}
 						duration={500}>
 						<button className='about-tech'>technologies</button>
 					</Link>

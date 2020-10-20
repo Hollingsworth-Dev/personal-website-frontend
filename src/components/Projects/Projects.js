@@ -11,7 +11,7 @@ const Projects = (props) => {
 					to='simon'
 					spy={true}
 					smooth={true}
-					offset={-300}
+					offset={-200}
 					duration={500}>
 					<button className='projects-simon'>SIMON</button>
 				</Link>
@@ -20,7 +20,7 @@ const Projects = (props) => {
 					to='muse'
 					spy={true}
 					smooth={true}
-					offset={-300}
+					offset={-200}
 					duration={500}>
 					<button className='projects-simon'>MUSE</button>
 				</Link>
@@ -29,7 +29,7 @@ const Projects = (props) => {
 					to='playlist'
 					spy={true}
 					smooth={true}
-					offset={-300}
+					offset={-200}
 					duration={500}>
 					<button className='projects-simon'>PlayList</button>
 				</Link>
@@ -38,7 +38,7 @@ const Projects = (props) => {
 					to='goodegg'
 					spy={true}
 					smooth={true}
-					offset={-300}
+					offset={-200}
 					duration={500}>
 					<button className='projects-simon'>GoodEgg</button>
 				</Link>
