@@ -2,8 +2,3 @@
 	height: 100vh;
 	width: 100vw;
 }
-.Squares {
-	stroke: #f7f0f0;
-	stroke-dasharray: 100;
-	stroke-width: 100px;
-}
