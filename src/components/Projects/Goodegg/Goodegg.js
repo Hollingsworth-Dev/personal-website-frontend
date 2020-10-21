@@ -29,7 +29,7 @@ const Goodegg = () => {
 					<div className='goodegg-icons'>
 						<div>
 							<a
-								href='https://salty-cliffs-88075.herokuapp.com/'
+								href='http://dev.good-egg-reports.com/'
 								target='_blank'
 								rel='noopener noreferrer'>
 								<AiOutlineLink size='1.5em' />
@@ -38,7 +38,7 @@ const Goodegg = () => {
 						</div>
 						<div>
 							<a
-								href='https://github.com/teamscrum2000'
+								href='https://github.com/My-Power-STN39M-Hopefully'
 								target='_blank'
 								rel='noopener noreferrer'>
 								<AiOutlineGithub size='1.5em' />
