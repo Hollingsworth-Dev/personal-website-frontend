@@ -3,6 +3,11 @@
 	width: 100vw;
 	position: relative;
 }
+.main-page footer {
+	bottom: 0;
+	text-align: center;
+	color: white;
+}
 .main-content {
 	display: flex;
 	justify-content: center;
