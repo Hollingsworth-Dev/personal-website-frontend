@@ -12,7 +12,7 @@
 	width: 150px;
 	margin-right: 30px;
 	margin-bottom: 20px;
-	border: 2px solid var(--main-blue-color);
+	border: 2px solid var(--main-medium-red-color);
 	border-radius: 0.2em;
 	padding: 10px;
 	background-color: var(--main-grey-transparent-color);
@@ -20,7 +20,7 @@
 }
 .projects-buttons button:hover {
 	background-color: var(--main-grey-color);
-	border-color: var(--main-dark-purple-color);
+	border-color: var(--main-bright-red-color);
 }
 .projects-buttons button:active {
 	outline: none;

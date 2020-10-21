@@ -15,7 +15,7 @@
 	color: white;
 }
 .home-container {
-	border: 2px solid var(--main-blue-color);
+	border: 2px solid var(--main-medium-red-color);
 	border-radius: 0.5em;
 	padding: 20px;
 	display: flex;
@@ -24,7 +24,7 @@
 	background-color: var(--main-grey-transparent-color);
 }
 .home-content h2 {
-	border: 2px solid var(--main-blue-color);
+	border: 2px solid var(--main-medium-red-color);
 	border-radius: 0.2em;
 	padding: 10px;
 	padding-left: 50px;
@@ -33,7 +33,7 @@
 }
 .home-headshot {
 	border-radius: 0.5em;
-	border: 2px solid var(--main-blue-color);
+	border: 2px solid var(--main-medium-red-color);
 	height: 290px;
 }
 .home-headshot img {
@@ -55,7 +55,7 @@
 	margin-top: -30px;
 	margin-left: 10px;
 	text-decoration-line: overline;
-	text-decoration-color: var(--main-blue-color);
+	text-decoration-color: var(--main-medium-red-color);
 }
 .home-bio {
 	text-align: right;
@@ -65,7 +65,7 @@
 .skill-tree {
 	font-size: 1.2em;
 	text-align: center;
-	border: 2px solid var(--main-blue-color);
+	border: 2px solid var(--main-medium-red-color);
 	border-radius: 0.2em;
 	display: flex;
 	flex-direction: column;
@@ -77,16 +77,16 @@
 	display: flex;
 	justify-content: space-evenly;
 	border: none;
+	border-top: 1px solid var(--main-medium-red-color);
+	padding-top: 10px;
 }
 .skill-tree h4 {
 	margin: 0;
 	margin-bottom: 15px;
-	text-decoration-line: underline;
-	text-decoration-color: var(--main-blue-color);
 }
 .home-bio-container {
 	border-radius: 0.5em;
-	border: 2px solid var(--main-blue-color);
+	border: 2px solid var(--main-medium-red-color);
 	margin-left: 20px;
 	padding: 15px;
 }

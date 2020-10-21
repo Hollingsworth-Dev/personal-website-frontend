@@ -30,20 +30,20 @@
 	padding-bottom: 5px;
 }
 .navbar-items button:focus {
-	border-color: var(--main-green-color);
+	border-color: var(--main-bright-red-color);
 	outline: none;
 }
 @keyframes changeBottomBorder {
 	0% {
-		border-bottom-color: var(--main-dark-purple-color);
+		border-bottom-color: var(--main-medium-red-color);
 	}
 	25% {
-		border-bottom-color: var(--main-blue-color);
+		border-bottom-color: var(--main-burgundy-color);
 	}
 	50% {
-		border-bottom-color: var(--main-green-color);
+		border-bottom-color: var(--main-bright-red-color);
 	}
 	100% {
-		border-bottom-color: var(--main-dark-purple-color);
+		border-bottom-color: var(--main-medium-red-color);
 	}
 }

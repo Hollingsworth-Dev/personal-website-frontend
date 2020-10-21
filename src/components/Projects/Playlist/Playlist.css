@@ -10,7 +10,7 @@
 	height: 100vh;
 }
 .playlist-page h1 {
-	border: 2px solid var(--main-blue-color);
+	border: 2px solid var(--main-medium-red-color);
 	border-radius: 0.2em;
 	padding: 10px;
 	padding-left: 50px;
@@ -23,7 +23,7 @@
 	grid-template-columns: 300px 300px 300px;
 	grid-template-rows: 450px 300px 300px;
 	grid-gap: 20px;
-	border: 2px solid var(--main-blue-color);
+	border: 2px solid var(--main-medium-red-color);
 	border-radius: 0.5em;
 	padding: 20px;
 	padding-left: 50px;
@@ -54,7 +54,7 @@
 	align-self: center;
 }
 .playlist-message {
-	border: 2px solid var(--main-blue-color);
+	border: 2px solid var(--main-medium-red-color);
 	border-radius: 0.5em;
 
 	padding-left: 20px;
@@ -80,4 +80,8 @@
 .playlist-icons a {
 	width: 5px;
 	margin-right: 40px;
+	color: var(--main-burgundy-color);
+}
+.playlist-icons a:hover {
+	color: var(--main-bright-red-color);
 }

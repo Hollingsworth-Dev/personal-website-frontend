@@ -11,7 +11,7 @@
 	height: 100vh;
 }
 .goodegg-page h1 {
-	border: 2px solid var(--main-blue-color);
+	border: 2px solid var(--main-medium-red-color);
 	border-radius: 0.2em;
 	padding: 10px;
 	padding-left: 50px;
@@ -24,7 +24,7 @@
 	grid-template-columns: 225px 225px;
 	grid-template-rows: 450px 450px;
 	grid-gap: 40px;
-	border: 2px solid var(--main-blue-color);
+	border: 2px solid var(--main-medium-red-color);
 	border-radius: 0.5em;
 	padding: 20px;
 	padding-left: 150px;
@@ -48,7 +48,7 @@
 	grid-row: 2 / span 1;
 }
 .goodegg-message {
-	border: 2px solid var(--main-blue-color);
+	border: 2px solid var(--main-medium-red-color);
 	border-radius: 0.5em;
 	width: 250px;
 	padding-left: 20px;
@@ -76,4 +76,8 @@
 .goodegg-icons a {
 	width: 5px;
 	margin-right: 40px;
+	color: var(--main-burgundy-color);
+}
+.goodegg-icons a:hover {
+	color: var(--main-bright-red-color);
 }

@@ -30,18 +30,17 @@
 .resume-container {
 	width: auto;
 	height: 100%;
-	border: 1px solid var(--main-green-color);
 }
 .resume-close-button {
-	color: white;
+	color: var(--main-bright-red-color);
 	height: 50px;
 	width: 120px;
 	border-radius: 0.2em;
-	border: 2px solid var(--main-dark-purple-color);
-	background-color: var(--main-grey-transparent-color);
+	background-color: transparent;
 	margin: 10px 0 0 10px;
 	font-size: 20px;
 }
+
 .resume-doc {
 	width: 100%;
 	height: auto;
