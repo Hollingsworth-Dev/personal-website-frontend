@@ -23,17 +23,14 @@
 	display: grid;
 	grid-template-columns: 225px 225px;
 	grid-template-rows: 450px 450px;
-	grid-gap: 20px;
+	grid-gap: 40px;
 	border: 2px solid var(--main-blue-color);
 	border-radius: 0.5em;
 	padding: 20px;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 150px;
+	padding-right: 150px;
 	background-color: var(--main-grey-transparent-color);
 	color: white;
-}
-.goodegg-icons {
-	width: 12%;
 }
 .goodegg-home {
 	height: 450px;
@@ -53,11 +50,30 @@
 .goodegg-message {
 	border: 2px solid var(--main-blue-color);
 	border-radius: 0.5em;
-	padding: 20px;
-	padding-left: 50px;
-	padding-right: 50px;
+	width: 250px;
+	padding-left: 20px;
+	padding-right: 20px;
 	background-color: transparent;
 }
 .goodegg-incident {
 	display: none;
+}
+.goodegg-message h4 {
+	font-size: 1.2em;
+	margin: 0;
+	margin-top: 10px;
+}
+.goodegg-message p {
+	font-size: 0.95em;
+}
+.goodegg-icons {
+	display: flex;
+	flex-direction: column;
+}
+.goodegg-icons div {
+	display: flex;
+}
+.goodegg-icons a {
+	width: 5px;
+	margin-right: 40px;
 }

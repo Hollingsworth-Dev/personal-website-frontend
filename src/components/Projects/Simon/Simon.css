@@ -54,13 +54,25 @@
 	grid-row: 2 / span 1;
 	border: 2px solid var(--main-blue-color);
 	border-radius: 0.5em;
-	padding: 10px;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding: 5px;
+	padding-left: 25px;
+	padding-right: 25px;
 	background-color: transparent;
+}
+.simon-message h4 {
+	font-size: 2em;
+}
+.simon-message p {
+	font-size: 1.2em;
 }
 .simon-icons {
 	display: flex;
-	justify-content: center;
-	width: 5%;
+	flex-direction: column;
+}
+.simon-icons div {
+	display: flex;
+}
+.simon-icons a {
+	width: 5px;
+	margin-right: 40px;
 }

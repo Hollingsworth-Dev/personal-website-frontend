@@ -42,19 +42,16 @@
 	grid-column: 1 / span 1;
 	grid-row: 2 / span 2;
 }
-.muse-main {
-	height: 600px;
-	width: 600px;
-	object-fit: cover;
-	grid-column: 2 / span 2;
-	grid-row: 2 / span 2;
-	justify-self: center;
-	align-self: center;
-	border-radius: 0.3em;
-}
-.muse-message {
+.muse-logo {
+	width: 400px;
 	grid-column: 3 / span 1;
 	grid-row: 1 / span 1;
+	justify-self: center;
+	align-self: center;
+}
+.muse-message {
+	grid-column: 2 / span 2;
+	grid-row: 2 / span 2;
 	border: 2px solid var(--main-blue-color);
 	border-radius: 0.5em;
 	padding: 20px;
@@ -62,6 +59,21 @@
 	padding-right: 50px;
 	background-color: transparent;
 }
+
+.muse-message h4 {
+	font-size: 2em;
+}
+.muse-message p {
+	font-size: 1.2em;
+}
 .muse-icons {
-	width: 12%;
+	display: flex;
+	flex-direction: column;
+}
+.muse-icons div {
+	display: flex;
+}
+.muse-icons a {
+	width: 5px;
+	margin-right: 40px;
 }

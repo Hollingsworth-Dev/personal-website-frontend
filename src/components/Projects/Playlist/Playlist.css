@@ -34,8 +34,9 @@
 .playlist-view {
 	border-radius: 0.3em;
 	height: 450px;
-	grid-column: 1 / span 2;
-	grid-row: 1 / span 1;
+	grid-column: 2 / span 2;
+	grid-row: 2 / span 2;
+	align-self: center;
 }
 .playlist-mobile {
 	width: 300px;
@@ -45,21 +46,38 @@
 .playlist-home {
 	border-radius: 0.3em;
 	height: 600px;
-	width: 600px;
-	object-fit: cover;
-	grid-column: 2 / span 2;
-	grid-row: 2 / span 2;
+	width: 625px;
+	object-fit: contain;
+	grid-column: 1 / span 2;
+	grid-row: 1 / span 1;
 	justify-self: center;
 	align-self: center;
 }
 .playlist-message {
 	border: 2px solid var(--main-blue-color);
 	border-radius: 0.5em;
-	padding: 20px;
-	padding-left: 50px;
-	padding-right: 50px;
+
+	padding-left: 20px;
+	padding-right: 20px;
 	background-color: transparent;
 }
+
+.playlist-message h4 {
+	font-size: 1.5em;
+	margin: 0;
+	margin-top: 10px;
+}
+.playlist-message p {
+	font-size: 1em;
+}
 .playlist-icons {
-	width: 12%;
+	display: flex;
+	flex-direction: column;
+}
+.playlist-icons div {
+	display: flex;
+}
+.playlist-icons a {
+	width: 5px;
+	margin-right: 40px;
 }
