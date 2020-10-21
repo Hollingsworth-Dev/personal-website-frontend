@@ -14,7 +14,7 @@
 }
 .contact-content header {
 	border: 2px solid var(--main-blue-color);
-	border-radius: 25px;
+	border-radius: 0.5em;
 	padding: 10px;
 	padding-left: 50px;
 	padding-right: 50px;
@@ -23,7 +23,7 @@
 .contact-content main {
 	margin-top: 40px;
 	border: 2px solid var(--main-blue-color);
-	border-radius: 25px;
+	border-radius: 0.5em;
 	padding: 10px;
 	padding-left: 50px;
 	padding-right: 50px;
@@ -42,7 +42,7 @@
 	margin-left: 40px;
 	text-align: center;
 	border: 2px solid var(--main-blue-color);
-	border-radius: 15px;
+	border-radius: 0.2em;
 	padding: 10px;
 	padding-left: 50px;
 	padding-right: 50px;
@@ -51,7 +51,7 @@
 .contact-info h2 {
 	text-align: center;
 	border: 2px solid var(--main-blue-color);
-	border-radius: 15px;
+	border-radius: 0.2em;
 	padding: 10px;
 	padding-left: 50px;
 	padding-right: 50px;
@@ -60,7 +60,7 @@
 .contact-form-container h2 {
 	text-align: center;
 	border: 2px solid var(--main-blue-color);
-	border-radius: 15px;
+	border-radius: 0.1em;
 	padding: 10px;
 	padding-left: 20px;
 	padding-right: 20px;

@@ -20,7 +20,7 @@ const Home = () => {
 		<div className='home-page' id='welcome'>
 			<div className='home-content'>
 				<h2>meet caleb</h2>
-				<main>
+				<main className='home-container'>
 					<div className='home-headshot'>
 						<img src={Headshot} alt='headshot' />
 					</div>
@@ -39,7 +39,7 @@ const Home = () => {
 							</p>
 							<div className='skill-tree'>
 								<h4>skills overview</h4>
-								<main>
+								<main className='skill-container'>
 									<DiHtml5 />
 									<DiCss3Full />
 									<DiJsBadge />

@@ -14,9 +14,9 @@
 	align-items: center;
 	color: white;
 }
-.home-content main {
+.home-container {
 	border: 2px solid var(--main-blue-color);
-	border-radius: 15px;
+	border-radius: 0.5em;
 	padding: 20px;
 	display: flex;
 	flex-direction: row;
@@ -25,20 +25,20 @@
 }
 .home-content h2 {
 	border: 2px solid var(--main-blue-color);
-	border-radius: 15px;
+	border-radius: 0.2em;
 	padding: 10px;
 	padding-left: 50px;
 	padding-right: 50px;
 	background-color: var(--main-grey-transparent-color);
 }
 .home-headshot {
-	border-radius: 15px;
+	border-radius: 0.5em;
 	border: 2px solid var(--main-blue-color);
 	height: 290px;
 }
 .home-headshot img {
 	height: 250px;
-	border-radius: 30px;
+	border-radius: 1.5em;
 	padding: 20px;
 }
 .home-info {
@@ -65,19 +65,17 @@
 .skill-tree {
 	margin-left: 20px;
 	font-size: 1.2em;
-	text-align: right;
 	hyphens: none;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	text-align: center;
 }
-.skill-tree main {
+.skill-container {
 	font-size: 40px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
+	border: none;
 }
 .home-bio-container {
-	border-radius: 15px;
+	border-radius: 0.5em;
 	border: 2px solid var(--main-blue-color);
 	margin-left: 20px;
 	padding: 15px;

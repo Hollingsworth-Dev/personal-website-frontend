@@ -33,12 +33,12 @@
 	border: 1px solid var(--main-green-color);
 }
 .resume-close-button {
-	color: black;
+	color: white;
 	height: 50px;
 	width: 120px;
-	border-radius: 10px;
-	border: 2px solid var(--main-green-color);
-	background-color: transparent;
+	border-radius: 0.2em;
+	border: 2px solid var(--main-dark-purple-color);
+	background-color: var(--main-grey-transparent-color);
 	margin: 10px 0 0 10px;
 	font-size: 20px;
 }

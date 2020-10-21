@@ -13,7 +13,7 @@
 	margin-right: 30px;
 	margin-bottom: 20px;
 	border: 2px solid var(--main-blue-color);
-	border-radius: 10px;
+	border-radius: 0.2em;
 	padding: 10px;
 	background-color: var(--main-grey-transparent-color);
 	color: white;
