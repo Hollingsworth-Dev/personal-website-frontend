@@ -16,31 +16,44 @@ const Goodegg = () => {
 			<h1>GoodEgg</h1>
 			<main className='goodegg-content'>
 				<div className='goodegg-message'>
-					<p>A full-stack application using React.js and Django</p>
+					<h4>A full-stack application using React.js and Django</h4>
 					<p>
-						A police accountability app to track and report 'GoodEggs' and
-						'BadApples' within your community.
+						This is a police accountability application used to track and report
+						'GoodEggs' and 'BadApples' within your community. I built this app
+						with a team of engineers hoping to bring a new, relevant, and useful
+						application to the world. It includes user authentication, an API
+						with police forces, officers, and the GoodEggs and BadApples on
+						those forces.
 					</p>
 
 					<div className='goodegg-icons'>
-						<a
-							href='https://salty-cliffs-88075.herokuapp.com/'
-							target='_blank'
-							rel='noopener noreferrer'>
-							<AiOutlineLink size='lg' />
-						</a>
-						<a
-							href='https://github.com/teamscrum2000'
-							target='_blank'
-							rel='noopener noreferrer'>
-							<AiOutlineGithub size='lg' />
-						</a>
-						<a
-							href='https://medium.com/@caleb.hollingsworth.dev/goodegg-dev-b9425d1b9378'
-							target='_blank'
-							rel='noopener noreferrer'>
-							<AiOutlineMedium size='lg' />
-						</a>
+						<div>
+							<a
+								href='https://salty-cliffs-88075.herokuapp.com/'
+								target='_blank'
+								rel='noopener noreferrer'>
+								<AiOutlineLink size='1.5em' />
+							</a>
+							<p>Link to live application</p>
+						</div>
+						<div>
+							<a
+								href='https://github.com/teamscrum2000'
+								target='_blank'
+								rel='noopener noreferrer'>
+								<AiOutlineGithub size='1.5em' />
+							</a>
+							<p>Link to Github repository</p>
+						</div>
+						<div>
+							<a
+								href='https://medium.com/@caleb.hollingsworth.dev/goodegg-dev-b9425d1b9378'
+								target='_blank'
+								rel='noopener noreferrer'>
+								<AiOutlineMedium size='1.5em' />
+							</a>
+							<p>Link to Medium article</p>
+						</div>
 					</div>
 				</div>
 				<img className='goodegg-home' src={Home} alt='goodegg'></img>

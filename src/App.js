@@ -11,9 +11,13 @@ const rotate = keyframes`
 	
 }
 
-100%{
+50%{
 	transform-origin: center;
 	transform: rotate(360deg)
+}
+100% {
+	transform-origin: center;
+	transform: rotate(0deg)
 }
 `;
 const scale = keyframes`
@@ -42,38 +46,38 @@ const StyledSVG = styled(ImportedSvg)`
 	}
 
 	.purple-rect1 {
-		animation: ${rotate} infinite 40s linear;
+		animation: ${rotate} infinite 60s linear;
 	}
 	.purple-rect2 {
-		animation: ${rotate} infinite 50s linear;
+		animation: ${rotate} infinite 70s linear;
 		animation-delay: 0.5s;
 	}
 	.purple-rect3 {
-		animation: ${rotate} infinite 40s linear;
+		animation: ${rotate} infinite 60s linear;
 		animation-delay: 1s;
 	}
 	.blue-rect1 {
-		animation: ${rotate} infinite 50s linear;
+		animation: ${rotate} infinite 70s linear;
 		animation-delay: 1.5s;
 	}
 	.blue-rect2 {
-		animation: ${rotate} infinite 40s linear;
+		animation: ${rotate} infinite 60s linear;
 		animation-delay: 2s;
 	}
 	.blue-rect3 {
-		animation: ${rotate} infinite 50s linear;
+		animation: ${rotate} infinite 70s linear;
 		animation-delay: 2.5s;
 	}
 	.green-rect1 {
-		animation: ${rotate} infinite 40s linear;
+		animation: ${rotate} infinite 60s linear;
 		animation-delay: 3s;
 	}
 	.green-rect2 {
-		animation: ${rotate} infinite 50s linear;
+		animation: ${rotate} infinite 70s linear;
 		animation-delay: 3.5s;
 	}
 	.green-rect3 {
-		animation: ${rotate} infinite 40s linear;
+		animation: ${rotate} infinite 60s linear;
 		animation-delay: 4s;
 	}
 `;

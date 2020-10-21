@@ -10,8 +10,8 @@
 	height: 100vh;
 }
 .simon-page h1 {
-	border: 2px solid var(--main-blue-color);
-	border-radius: 15px;
+	border: 2px solid var(--main-medium-red-color);
+	border-radius: 0.2em;
 	padding: 10px;
 	padding-left: 50px;
 	padding-right: 50px;
@@ -23,8 +23,8 @@
 	grid-template-columns: 300px 300px 300px;
 	grid-template-rows: 450px 500px 100px;
 	grid-gap: 20px;
-	border: 2px solid var(--main-blue-color);
-	border-radius: 25px;
+	border: 2px solid var(--main-medium-red-color);
+	border-radius: 0.5em;
 	padding: 20px;
 	padding-left: 50px;
 	padding-right: 50px;
@@ -33,7 +33,7 @@
 }
 .simon-desktop {
 	width: 900px;
-	border-radius: 15px;
+	border-radius: 0.3em;
 	grid-column: 1 / span 3;
 	grid-row: 1 / span 1;
 	justify-self: center;
@@ -52,15 +52,31 @@
 .simon-message {
 	grid-column: 1 / span 2;
 	grid-row: 2 / span 1;
-	border: 2px solid var(--main-blue-color);
-	border-radius: 25px;
-	padding: 10px;
-	padding-left: 50px;
-	padding-right: 50px;
+	border: 2px solid var(--main-medium-red-color);
+	border-radius: 0.5em;
+	padding: 5px;
+	padding-left: 25px;
+	padding-right: 25px;
 	background-color: transparent;
+}
+.simon-message h4 {
+	font-size: 2em;
+}
+.simon-message p {
+	font-size: 1.2em;
 }
 .simon-icons {
 	display: flex;
-	justify-content: center;
-	width: 5%;
+	flex-direction: column;
+}
+.simon-icons div {
+	display: flex;
+}
+.simon-icons a {
+	width: 5px;
+	margin-right: 40px;
+	color: var(--main-burgundy-color);
+}
+.simon-icons a:hover {
+	color: var(--main-bright-red-color);
 }
