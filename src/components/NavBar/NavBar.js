@@ -7,7 +7,7 @@ const timeoutFunction = () => {
 };
 const scrollToWelcome = () => {
 	window.scroll({
-		top: 750,
+		top: 800,
 		behavior: 'smooth',
 	});
 };

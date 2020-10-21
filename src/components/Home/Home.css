@@ -14,9 +14,9 @@
 	align-items: center;
 	color: white;
 }
-.home-content main {
-	border: 2px solid var(--main-blue-color);
-	border-radius: 15px;
+.home-container {
+	border: 2px solid var(--main-medium-red-color);
+	border-radius: 0.5em;
 	padding: 20px;
 	display: flex;
 	flex-direction: row;
@@ -24,21 +24,21 @@
 	background-color: var(--main-grey-transparent-color);
 }
 .home-content h2 {
-	border: 2px solid var(--main-blue-color);
-	border-radius: 15px;
+	border: 2px solid var(--main-medium-red-color);
+	border-radius: 0.2em;
 	padding: 10px;
 	padding-left: 50px;
 	padding-right: 50px;
 	background-color: var(--main-grey-transparent-color);
 }
 .home-headshot {
-	border-radius: 15px;
-	border: 2px solid var(--main-blue-color);
+	border-radius: 0.5em;
+	border: 2px solid var(--main-medium-red-color);
 	height: 290px;
 }
 .home-headshot img {
 	height: 250px;
-	border-radius: 30px;
+	border-radius: 1.5em;
 	padding: 20px;
 }
 .home-info {
@@ -55,7 +55,7 @@
 	margin-top: -30px;
 	margin-left: 10px;
 	text-decoration-line: overline;
-	text-decoration-color: var(--main-blue-color);
+	text-decoration-color: var(--main-medium-red-color);
 }
 .home-bio {
 	text-align: right;
@@ -63,22 +63,30 @@
 	font-size: 1.2em;
 }
 .skill-tree {
-	margin-left: 20px;
 	font-size: 1.2em;
-	text-align: right;
-	hyphens: none;
+	text-align: center;
+	border: 2px solid var(--main-medium-red-color);
+	border-radius: 0.2em;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	padding: 20px;
 }
-.skill-tree main {
+
+.skill-container {
 	font-size: 40px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
+	border: none;
+	border-top: 1px solid var(--main-medium-red-color);
+	padding-top: 10px;
+}
+.skill-tree h4 {
+	margin: 0;
+	margin-bottom: 15px;
 }
 .home-bio-container {
-	border-radius: 15px;
-	border: 2px solid var(--main-blue-color);
+	border-radius: 0.5em;
+	border: 2px solid var(--main-medium-red-color);
 	margin-left: 20px;
 	padding: 15px;
 }

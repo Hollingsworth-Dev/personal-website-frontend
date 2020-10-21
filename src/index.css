@@ -1,9 +1,16 @@
 :root {
 	--main-blue-color: rgb(0, 208, 255);
 	--main-dark-purple-color: rgb(70, 4, 136);
-	--main-green-color: rgb(67, 223, 174);
+	--main-green-color: rgb(10, 67, 254);
 	--main-grey-color: #171b20;
 	--main-grey-transparent-color: #171b20e5;
+	--main-light-blue-color: rgb(173, 224, 247);
+	--main-medium-blue-color: rgb(2, 90, 242);
+	--main-dark-blue-color: rgb(13, 2, 66);
+	--main-bright-red-color: #e23e57;
+	--main-medium-red-color: #88304e;
+	--main-burgundy-color: #522546;
+	--main-purple-color: #311d3f;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
