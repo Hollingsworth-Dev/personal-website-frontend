@@ -63,16 +63,26 @@
 	font-size: 1.2em;
 }
 .skill-tree {
-	margin-left: 20px;
 	font-size: 1.2em;
-	hyphens: none;
 	text-align: center;
+	border: 2px solid var(--main-blue-color);
+	border-radius: 0.2em;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
 }
+
 .skill-container {
 	font-size: 40px;
 	display: flex;
 	justify-content: space-evenly;
 	border: none;
+}
+.skill-tree h4 {
+	margin: 0;
+	margin-bottom: 15px;
+	text-decoration-line: underline;
+	text-decoration-color: var(--main-blue-color);
 }
 .home-bio-container {
 	border-radius: 0.5em;
