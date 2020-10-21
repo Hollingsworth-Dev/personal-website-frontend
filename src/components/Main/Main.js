@@ -129,6 +129,7 @@ const Main = () => {
 			{renderHome === true && <Playlist />}
 			{renderHome === true && <Muse />}
 			{renderHome === true && <Goodegg />}
+			<footer>caleb hollingsworth © 2020 All Rights Reserved</footer>
 		</div>
 	);
 };
