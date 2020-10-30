@@ -3,6 +3,7 @@ import './App.css';
 import { ReactComponent as ImportedSvg } from './Images/Squares2.svg';
 import styled, { keyframes } from 'styled-components';
 import Main from './components/Main/Main';
+import ReactGA from 'react-ga';
 
 const rotate = keyframes`
 0% {
@@ -81,6 +82,9 @@ const StyledSVG = styled(ImportedSvg)`
 		animation-delay: 4s;
 	}
 `;
+
+ReactGA.initialize('G-VH6G0BXGHY');
+ReactGA.pageview(window.location.pathname);
 
 function App() {
 	return (
