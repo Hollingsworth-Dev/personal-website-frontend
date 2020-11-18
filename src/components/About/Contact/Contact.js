@@ -20,7 +20,7 @@ class Contact extends Component {
 			recaptchaLoad: false,
 			isVerified: false,
 		};
-		this.recaptchaLoad = this.recaptchaLoad.bind(this);
+		this.recaptchaLoaded = this.recaptchaLoaded.bind(this);
 		this.verifiedRecaptcha = this.verifiedRecaptcha.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.resetForm = this.resetForm.bind(this);
