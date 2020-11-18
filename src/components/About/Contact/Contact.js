@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import * as emailjs from 'emailjs-com';
-import Recaptcha from 'recaptcha';
+
 import {
 	AiOutlineGithub,
 	AiOutlineLinkedin,
@@ -17,36 +17,33 @@ class Contact extends Component {
 			email: '',
 			subject: '',
 			message: '',
-			recaptchaLoad: false,
-			isVerified: false,
 		};
-		this.recaptchaLoaded = this.recaptchaLoaded.bind(this);
-		this.verifiedRecaptcha = this.verifiedRecaptcha.bind(this);
+
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.resetForm = this.resetForm.bind(this);
 		this.handleChange = this.handleChange.bind(this);
 	}
 
 	handleSubmit(event) {
-		const { recaptchaLoad, isVerified } = this.state;
 		event.preventDefault();
-		if (recaptchaLoad && isVerified) {
-			const { name, email, subject, message } = this.state;
-			const templateParams = {
-				from_name: name,
-				from_email: email,
-				to_name: 'Caleb Hollingsworth',
-				subject,
-				message_html: message,
-			};
-			email.js.send(
-				'gmail',
-				'template_azhw5gd',
-				templateParams,
-				'user_dqONawvCLhijWb0LwUuoV'
-			);
-		}
+
+		const { name, email, subject, message } = this.state;
+		const templateParams = {
+			from_name: name,
+			from_email: email,
+			to_name: 'Caleb Hollingsworth',
+			subject,
+			message_html: message,
+		};
+		emailjs.send(
+			'gmail',
+			'template_azhw5gd',
+			templateParams,
+			'user_dqONawvCLhijWb0LwUuoV'
+		);
+		this.resetForm();
 	}
+
 	resetForm() {
 		this.setState({
 			name: '',
@@ -58,16 +55,9 @@ class Contact extends Component {
 	handleChange(event) {
 		this.setState({ [event.target.name]: event.target.value });
 	}
-	recaptchaLoaded() {
-		this.setState({ recaptchaLoad: true });
-	}
-	verifiedRecaptcha(response) {
-		if (response) {
-			this.setState({ isVerified: true });
-		}
-	}
+
 	render() {
-		const { name, email, subject, message, sentMessage } = this.state;
+		const { name, email, subject, message } = this.state;
 		return (
 			<div className='contact-page' id='contact'>
 				<div className='contact-content'>
@@ -87,7 +77,7 @@ class Contact extends Component {
 						</div>
 						<div className='contact-form-container'>
 							<h2>got a question or want to work together?</h2>
-							<form className='contact-form' onSubmit={this.handleSubmit}>
+							<form className='contact-form'>
 								<input
 									placeholder='name'
 									type='text'
@@ -120,16 +110,14 @@ class Contact extends Component {
 									onChange={this.handleChange}
 									required
 								/>
-								<button className='contact-button' type='submit' id='submit'>
+								<button
+									className='contact-button'
+									type='submit'
+									id='submit'
+									onSubmit={this.handleSubmit}>
 									Submit
 								</button>
 							</form>
-							<Recaptcha
-								sitekey='6LeRdOQZAAAAAOSyfWmSLuRMhMEK12ggcOofFAOE'
-								render='explicit'
-								onloadCallback={this.recaptchaLoaded}
-								verifyCallback={this.verifiedRecaptcha}
-							/>
 						</div>
 						<div className='social-icons'>
 							{/* icons go here */}
