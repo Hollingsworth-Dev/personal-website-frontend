@@ -24,25 +24,30 @@ class Contact extends Component {
 		this.handleChange = this.handleChange.bind(this);
 	}
 
-	handleSubmit(event) {
+	handleSubmit = (event) => {
 		event.preventDefault();
-
-		const { name, email, subject, message } = this.state;
-		const templateParams = {
-			from_name: name,
-			from_email: email,
-			to_name: 'Caleb Hollingsworth',
-			subject,
-			message_html: message,
-		};
-		emailjs.send(
-			'gmail',
-			'template_azhw5gd',
-			templateParams,
-			'user_dqONawvCLhijWb0LwUuoV'
-		);
-		this.resetForm();
-	}
+		const templateId = 'template_azhw5gd';
+		console.log('something');
+		this.sendFeedback(templateId, {
+			message_html: this.state.message,
+			from_name: this.state.name,
+			reply_to: 'caleb.hollingsworth.dev@gmail.com',
+		});
+	};
+	sendFeedback = (templateId, variables) => {
+		console.log('hello');
+		emailjs
+			.send(
+				'service_10n2k98',
+				templateId,
+				variables,
+				'user_dqONawvCLhijWb0LwUuoV'
+			)
+			.then((res) => {
+				console.log('email successfully sent!');
+			})
+			.catch((err) => console.error('oops', err));
+	};
 
 	resetForm() {
 		this.setState({
@@ -77,7 +82,7 @@ class Contact extends Component {
 						</div>
 						<div className='contact-form-container'>
 							<h2>got a question or want to work together?</h2>
-							<form className='contact-form'>
+							<form className='contact-form' onSubmit={this.handleSubmit}>
 								<input
 									placeholder='name'
 									type='text'
