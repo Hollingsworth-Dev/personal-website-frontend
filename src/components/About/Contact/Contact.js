@@ -13,10 +13,11 @@ class Contact extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			name: '',
-			email: '',
-			subject: '',
-			message: '',
+			name: 'name',
+			email: 'email',
+			subject: 'subject',
+			message: 'message',
+			showEmailSuccess: false,
 		};
 
 		this.handleSubmit = this.handleSubmit.bind(this);
@@ -27,15 +28,13 @@ class Contact extends Component {
 	handleSubmit = (event) => {
 		event.preventDefault();
 		const templateId = 'template_azhw5gd';
-		console.log('something');
 		this.sendFeedback(templateId, {
 			message_html: this.state.message,
 			from_name: this.state.name,
-			reply_to: 'caleb.hollingsworth.dev@gmail.com',
+			reply_to: this.state.email,
 		});
 	};
 	sendFeedback = (templateId, variables) => {
-		console.log('hello');
 		emailjs
 			.send(
 				'service_10n2k98',
@@ -44,14 +43,14 @@ class Contact extends Component {
 				'user_dqONawvCLhijWb0LwUuoV'
 			)
 			.then((res) => {
-				console.log('email successfully sent!');
+				this.setState({ showEmailSuccess: true });
 			})
 			.catch((err) => console.error('oops', err));
 	};
 
 	resetForm() {
 		this.setState({
-			name: '',
+			name: 'name',
 			email: '',
 			subject: '',
 			message: '',
@@ -84,7 +83,8 @@ class Contact extends Component {
 							<h2>got a question or want to work together?</h2>
 							<form className='contact-form' onSubmit={this.handleSubmit}>
 								<input
-									placeholder='name'
+									placeholderText={this.state.name}
+									onFocus={() => this.setState({ name: '' })}
 									type='text'
 									name='name'
 									value={name}
@@ -92,7 +92,8 @@ class Contact extends Component {
 									required
 								/>
 								<input
-									placeholder='email'
+									placeholder={this.state.email}
+									onFocus={() => this.setState({ email: '' })}
 									type='text'
 									name='email'
 									value={email}
@@ -100,7 +101,8 @@ class Contact extends Component {
 									required
 								/>
 								<input
-									placeholder='subject'
+									placeholder={this.state.subject}
+									onFocus={() => this.setState({ subject: '' })}
 									type='text'
 									name='subject'
 									value={subject}
@@ -108,7 +110,8 @@ class Contact extends Component {
 									required
 								/>
 								<textarea
-									placeholder='your message'
+									placeholder={this.state.message}
+									onFocus={() => this.setState({ message: '' })}
 									type='text'
 									name='message'
 									value={message}
@@ -122,6 +125,11 @@ class Contact extends Component {
 									onSubmit={this.handleSubmit}>
 									Submit
 								</button>
+								{this.state.showEmailSuccess && (
+									<p className='email-success'>
+										Thank you! your email was sent successfully.
+									</p>
+								)}
 							</form>
 						</div>
 						<div className='social-icons'>

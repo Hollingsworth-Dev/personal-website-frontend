@@ -92,3 +92,6 @@
 .social-icons a:hover {
 	color: var(--main-bright-red-color);
 }
+.email-success {
+	color: var(--main-bright-red-color);
+}
