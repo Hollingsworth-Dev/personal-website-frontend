@@ -83,7 +83,7 @@ class Contact extends Component {
 							<h2>got a question or want to work together?</h2>
 							<form className='contact-form' onSubmit={this.handleSubmit}>
 								<input
-									placeholderText={this.state.name}
+									placeholder={this.state.name}
 									onFocus={() => this.setState({ name: '' })}
 									type='text'
 									name='name'

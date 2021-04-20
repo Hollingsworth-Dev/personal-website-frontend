@@ -13,10 +13,12 @@ const Technologies = () => {
 				<div>
 					<h2>frontend</h2>
 					<main>
-						<p>HTML</p>
-						<p>CSS</p>
-						<p>React</p>
-						<p>JS</p>
+						<p>HTML5</p>
+						<p>CSS3</p>
+						<p>JavaScript</p>
+						<p>React.js</p>
+						<p>TypeScript</p>
+						<p>ReactNative</p>
 						<p>Bootstrap</p>
 						<p>Axios</p>
 						<p>flexbox</p>
@@ -33,21 +35,24 @@ const Technologies = () => {
 						<p>PostgreSQL</p>
 						<p>Mongoose</p>
 						<p>MongoDB</p>
+						<p>Node.js</p>
+						<p>RESTful APIs</p>
 					</main>
 				</div>
 				<div>
 					<h2>other</h2>
 					<main>
 						<p>CRUD</p>
-						<p>API</p>
 						<p>Heroku</p>
+						<p>Jest</p>
+						<p>Git</p>
 						<p>AWS</p>
-						<p>Node</p>
-						<p>REST</p>
 						<p>VSCode</p>
 						<p>Photoshop</p>
 						<p>InDesign</p>
 						<p>Illustrator</p>
+						<p>XD</p>
+						<p>Atomic Dev Kit</p>
 						<p>GitHub</p>
 					</main>
 				</div>

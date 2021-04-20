@@ -8,31 +8,31 @@ import ReactGA from 'react-ga';
 const rotate = keyframes`
 0% {
 	transform-origin: center;
-	transform: rotate(0deg)
+	-webkit-transform: rotate(0deg)
 	
 }
 
 50%{
 	transform-origin: center;
-	transform: rotate(360deg)
+	-webkit-transform: rotate(360deg)
 }
 100% {
 	transform-origin: center;
-	transform: rotate(0deg)
+	-webkit-transform: rotate(0deg)
 }
 `;
 const scale = keyframes`
 0% {
 	transform-origin: center;
-	transform: scale(1)
+	-webkit-transform: scale(1)
 }
 50% {
 	transform-origin: center;
-	transform: scale(1.5)
+	-webkit-transform: scale(1.5)
 }
 100% {
 	transform-origin: center;
-	transform: scale(1)
+	-webkit-transform: scale(1)
 }
 `;
 
@@ -41,6 +41,7 @@ const StyledSVG = styled(ImportedSvg)`
 	top: 0;
 	width: 100%;
 	height: 100%;
+	overflow: hidden;
 
 	#layer1 {
 		animation: ${scale} infinite 80s ease;
@@ -82,9 +83,6 @@ const StyledSVG = styled(ImportedSvg)`
 		animation-delay: 4s;
 	}
 `;
-
-ReactGA.initialize('G-VH6G0BXGHY');
-ReactGA.pageview(window.location.pathname);
 
 function App() {
 	return (
